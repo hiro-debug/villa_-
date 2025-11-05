@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.mv {
+  position: relative;
+
+  @include mq('md'){
+  }
+}
+
+.mv__titleWrap {
+  text-align: center;
+  font-family: $second-font-family;
+  animation: fade 2s ease-in-out;
+
+}
+
+.mv__titleEn {
+  color: $mv-color;
+  font-size: rem(16);
+
+  @include mq("md") {
+    font-size: rem(20);
+    font-size: rem(18);
+  }
+}
+
+.mv__titleJa {
+  margin-top: rem(10);
+  font-size: rclamp(24, 32, 375, 1440);
+
+  @include mq('md'){
+    margin-top: rem(17);
+
+  }
+}
+
+.mv__img {
+  margin-top: rem(40);
+  height: rem(200);
+  animation: fade 2s ease-in-out;
+
+  @include mq("md") {
+    margin-top: rem(56);
+    height: auto;
+  }
+
+  img{
+    height: inherit;
+    object-fit: cover;
+    aspect-ratio: 375 / 200;
+
+    @include mq('md'){
+      height:inherit;
+      aspect-ratio: 1440 / 400;
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.mv__tree {
+  position: absolute;
+  width: rem(120);
+  left: rem(-20);
+  top: 15%;
+  animation: sway2 4s ease-in-out infinite;
+
+
+  @include mq("md") {
+    width: rem(238);
+    top: 9%;
+    left: rem(-16);
+  }
+}

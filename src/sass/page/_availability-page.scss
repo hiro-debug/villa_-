@@ -1,0 +1,257 @@
+@use "global" as *;
+
+.availability__table {
+  padding: rem(80) 0;
+  background-color: #fbfaf7;
+}
+
+.availability__table-inner {
+  max-width: rem(784);
+  margin: 0 auto;
+}
+
+.availability__content {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(110);
+  }
+}
+
+.availability__table-wrap {
+  border-radius: rem(6);
+  overflow: hidden;
+}
+
+.availability__table-wrap:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.availability__table-name {
+  font-family: $second-font-family;
+  font-size: rclamp(22, 35, 375, 1440);
+  color: #000000;
+}
+
+.availability__table-content {
+  width: 100%;
+  border-collapse: collapse;
+  border: rem(1) solid #cccccc;
+  margin-top: rem(16);
+  color: #000000;
+}
+
+.availability__table-header {
+  background-color: #eee8e0;
+}
+
+.availability__table-cell {
+  padding: rem(16) rem(8);
+  text-align: center;
+  border: rem(1) solid #cccccc;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include mq("md") {
+    padding: rem(16) rem(12);
+    font-size: rem(18);
+  }
+}
+
+.availability__table-cell.first {
+  @include mq("md") {
+    width: rem(200);
+  }
+}
+
+.availability__table-cell--time {
+  width: rem(183);
+  background-color: #eee8e0;
+  font-weight: 500;
+
+  @include mq("md") {
+    width: rem(248);
+  }
+}
+
+.availability__table-cell--data {
+  padding: rem(16) rem(8);
+}
+
+.availability__status {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.availability__table-attention {
+  margin-top: rem(12);
+  font-size: rem(13);
+
+  @include mq("md") {
+    font-size: rem(18);
+    margin-top: rem(22);
+  }
+}
+
+.availability__status--available {
+}
+
+.availability__status--limited {
+}
+
+.availability__status--unavailable {
+}
+
+.availability__status--closed {
+  color: #888888;
+}
+
+.availability__table-row {
+  background-color: $white;
+}
+
+.capacity-table .availability__table-cell {
+  width: 27%;
+}
+
+.capacity-table .availability__table-row .availability__table-cell {
+  width: 20%;
+}
+
+.availability__table-row:last-child .availability__table-cell--time {
+  border-bottom-left-radius: rem(6);
+}
+
+.availability__table-row:last-child .availability__table-cell:last-child {
+  border-bottom-right-radius: rem(6);
+}
+
+.availability__table-header .availability__table-cell:first-child {
+  border-top-left-radius: rem(6);
+}
+
+.availability__table-header .availability__table-cell:last-child {
+  border-top-right-radius: rem(6);
+}
+
+@include mq("md") {
+  .availability__table {
+    padding: rem(120) 0;
+  }
+}
+
+.availability__price {
+  padding: rem(80) 0;
+  background-color: #fbfaf7;
+}
+
+.availability__price-inner {
+  max-width: rem(800);
+  margin: 0 auto;
+}
+
+.availability__price-title {
+  font-size: rem(32);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: rem(20);
+  font-family: $second-font-family;
+}
+
+.availability__price-table-wrap {
+  background-color: #ffffff;
+  border-radius: rem(6);
+  overflow: hidden;
+  border: rem(1) solid #cccccc;
+}
+
+.availability__price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.availability__price-header {
+  background-color: #eee8e0;
+}
+
+.availability__price-cell {
+  padding: rem(16) rem(8);
+  text-align: center;
+  border: rem(1) solid #cccccc;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.availability__price-cell--room-type {
+  //   width: rem(183);
+  background-color: #eee8e0;
+  font-weight: 500;
+}
+
+.availability__price-cell--data {
+  //   width: rem(277);
+  padding: rem(16) rem(8);
+}
+
+.availability__price-number {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: 900;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.availability__price-row:last-child .availability__price-cell--room-type {
+  border-bottom-left-radius: rem(6);
+}
+
+.availability__price-row:last-child .availability__price-cell:last-child {
+  border-bottom-right-radius: rem(6);
+}
+
+.availability__price-header .availability__price-cell:first-child {
+  border-top-left-radius: rem(6);
+}
+
+.availability__price-header .availability__price-cell:last-child {
+  border-top-right-radius: rem(6);
+}
+
+// @include mq("md") {
+//   .availability__price {
+//     padding: rem(120) 0;
+//   }
+
+//   .availability__price-inner {
+//     max-width: rem(1000);
+//   }
+
+//   .availability__price-title {
+//     font-size: rem(36);
+//     margin-bottom: rem(30);
+//   }
+
+//   .availability__price-cell {
+//     padding: rem(20) rem(12);
+//     font-size: rem(20);
+//   }
+
+//   .availability__price-cell--room-type {
+//     // width: rem(200);
+//   }
+
+//   .availability__price-cell--data {
+//     // width: rem(300);
+//   }
+
+//   .availability__price-number {
+//     font-size: rem(20);
+//   }
+// }

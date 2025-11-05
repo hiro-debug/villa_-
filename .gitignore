@@ -1,0 +1,47 @@
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Package lock files (optional - コメントアウトしてバージョン管理することも可能)
+package-lock.json
+yarn.lock
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node & NPM
+.node-versions
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build & Compiled files
+/dist/
+/build/
+*.map
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local

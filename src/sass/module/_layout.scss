@@ -1,0 +1,23 @@
+@use "global" as *;
+.layout-header {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.layout-single{
+    margin-top: rem(160);
+    @include mq('md'){
+        margin-top: rem(242);
+    }
+}
+
+.layout-page{
+    margin-top: rem(90);
+
+    @include mq('md'){
+      margin-top: rem(140);
+    }
+}

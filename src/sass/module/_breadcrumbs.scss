@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.breadcrumbs {
+  padding-top: rem(12);
+  padding-left: rem(12);
+  background-color: #fbfaf7;
+  font-family: $second-font-family;
+  color: #5A72C7;
+  font-size: rem(12);
+
+  @include mq('md'){
+    padding-left: rem(42);
+    font-size: rem(14);
+
+  }
+}
+
+.single .breadcrumbs{
+  background-color: $white;
+}
+
+.breadcrumbs .current-item{
+    color: $black;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,28 @@
+@use "global" as *;
+
+
+.sec-title {
+  display: flex;
+  flex-direction: column;
+  gap: rem(11);
+  
+}
+
+.sec-title__en {
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.1em;
+  color: #e6bb65;
+  font-family: $second-font-family;
+}
+
+.sec-title__ja {
+  font-size: rem(32);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: $second-font-family;
+  font-size: rclamp(24, 32, 375,1440);
+
+}
