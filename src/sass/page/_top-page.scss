@@ -2,18 +2,41 @@
 .fv {
   position: relative;
   overflow-x: clip;
+
+  @include mq("md") {
+    height: rem(860);
+  }
+}
+
+.fv__inner {
+  @include mq("md") {
+    height: inherit;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
 }
 
 .fv__img {
   @include mq("md") {
     transform: translateX(255px);
+    height: inherit;
   }
+}
+
+.fv__img picture {
+  height: inherit;
+  display: block;
+}
+
+.fv__img img {
+  height: inherit;
+  object-fit: contain;
 }
 
 .fv__text-wrap {
   writing-mode: vertical-rl;
   position: absolute;
-  left: 43%;
+  left: 44%;
   top: 25.5%;
   transform: translateX(-50%);
   font-family: $second-font-family;
@@ -41,13 +64,25 @@
 }
 
 .fv__title span {
-  display: block;
+  display: inline-block;
   margin-top: rem(-34);
   color: #333;
+  background-color: $white;
+  padding: rem(47) 0;
+  line-height: 1.6;
+}
+
+.fv__title span:nth-of-type(1) {
+  margin-left: rem(8);
+}
+
+.fv__title span:nth-of-type(2) {
+  margin-top: 0;
 }
 
 .fv__message {
   margin-right: rem(11);
+  margin-top: rem(45);
   line-height: 2.3;
   font-size: rem(18);
   letter-spacing: 0.4em;
@@ -58,6 +93,12 @@
   bottom: -13%;
   width: 29.3%;
   position: absolute;
+
+  @include mq('md'){
+    width: rem(421);
+    left: 19%;
+    transform: translateX(-50%);
+  }
 }
 
 .fv__img-item--upper {
@@ -126,6 +167,10 @@
   width: 26%;
   top: 24.5%;
   animation: sway 4s ease-in-out infinite;
+
+  @include mq('md'){
+    width: rem(374);
+  }
 }
 
 .fv__tree-item-right {
@@ -144,7 +189,7 @@
 
 .fv__banner {
   @include mq("md") {
-    width: 43.5%;
+    width: rem(626);
     margin-left: auto;
     margin-top: rem(-172);
     margin-right: 0;
@@ -167,7 +212,7 @@
   margin-bottom: rem(53);
 
   @include mq("md") {
-    margin-top: rem(-20);
+    margin-top: rem(76);
   }
 }
 
@@ -687,16 +732,15 @@
   }
 }
 
-.about__business-list li{
+.about__business-list li {
   text-indent: -1rem;
   padding-left: 1rem;
   font-size: rem(14);
 
-  @include mq('md'){
-    text-indent:0;
+  @include mq("md") {
+    text-indent: 0;
     padding-left: 0;
     font-size: rem(16);
-  
   }
 }
 
@@ -746,12 +790,20 @@
 }
 
 .about__notice {
+  margin-top: rem(11);
+
+  @include mq("md") {
+    margin-top: rem(5);
+  }
+}
+
+.about__notice a {
   display: flex;
   align-items: center;
   gap: rem(18);
-  margin-top: rem(11);
   justify-content: center;
-
+  width: max-content;
+  padding: rem(10) rem(10) rem(10) rem(4);
   @include mq("md") {
     justify-content: initial;
   }
@@ -1095,10 +1147,6 @@
   @include mq("md") {
     gap: rem(20);
   }
-
-  &:has(.recruit__slide:hover) {
-    animation-play-state: paused;
-  }
 }
 
 .recruit__slide {
@@ -1183,6 +1231,3 @@
 .recruit__list-link:hover .recruit__list-title {
   color: #3a5abf;
 }
-
-
-

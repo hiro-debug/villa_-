@@ -1,0 +1,17 @@
+@use "global" as *;
+.page-slider{
+    max-width: 1124px;
+    display: flex;
+    gap: rem(25);
+    margin-top: rem(80);
+
+    @include mq('md'){
+      margin-top: rem(100);
+      margin-inline: auto;
+    }
+}
+
+.page-slider__item {
+
+}
+

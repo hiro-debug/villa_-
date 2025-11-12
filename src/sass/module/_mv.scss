@@ -3,7 +3,7 @@
 .mv {
   position: relative;
 
-  @include mq('md'){
+  @include mq("md") {
   }
 }
 
@@ -11,7 +11,6 @@
   text-align: center;
   font-family: $second-font-family;
   animation: fade 2s ease-in-out;
-
 }
 
 .mv__titleEn {
@@ -28,9 +27,8 @@
   margin-top: rem(10);
   font-size: rclamp(24, 32, 375, 1440);
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(17);
-
   }
 }
 
@@ -44,13 +42,13 @@
     height: auto;
   }
 
-  img{
+  img {
     height: inherit;
     object-fit: cover;
     aspect-ratio: 375 / 200;
 
-    @include mq('md'){
-      height:inherit;
+    @include mq("md") {
+      height: inherit;
       aspect-ratio: 1440 / 400;
     }
   }
@@ -65,7 +63,6 @@
   }
 }
 
-
 .mv__tree {
   position: absolute;
   width: rem(120);
@@ -73,10 +70,37 @@
   top: 15%;
   animation: sway2 4s ease-in-out infinite;
 
-
   @include mq("md") {
     width: rem(238);
     top: 9%;
     left: rem(-16);
+  }
+}
+
+.mv__dot {
+  position: absolute;
+  right: rem(3);
+  bottom: rem(5);
+  width: rem(80);
+  height: rem(60);
+  @include mq("md") {
+    width: rem(137);
+    height: rem(110);
+    right: rem(25);
+    bottom: rem(40);
+  }
+}
+
+.mv__tree.archive-mv__tree {
+  top: -16%;
+}
+
+.mv__dot.archive-mv__tree {
+  width: rem(80);
+  height: rem(60);
+  @include mq("md") {
+    width: rem(137);
+    height: rem(110);
+    bottom: rem(-88);
   }
 }

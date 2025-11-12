@@ -1,4 +1,11 @@
 @use "global" as *;
+.contact-page__content-inner{
+  padding-bottom: rem(60);
+
+  @include mq('md'){
+    padding-bottom: rem(100);
+  }
+}
 
 // お問い合わせフォームのフロー
 .contact-form__flow {

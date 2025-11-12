@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 <main class="front-page">
     <section class="fv">
-        <div class="fv__inner ">
+        <div class="fv__inner">
 
             <div class="fv__img">
                 <picture>
-                    <source srcset="<?php echo esc_url(get_theme_file_uri('/images/common/fv-pc.jpg')); ?>" media="(min-width: 768px)" />
-                    <img src="<?php echo esc_url(get_theme_file_uri('/images/common/fv-pc.jpg')); ?>" alt="職員と利用者が仲良くお話をしています" />
+                    <source srcset="<?php echo esc_url(get_theme_file_uri('/images/common/fv-pc.png')); ?>" media="(min-width: 768px)" />
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/common/fv-pc.png')); ?>" alt="職員と利用者が仲良くお話をしています" />
                 </picture>
             </div>
             <div class="fv__text-wrap">
-                <h2 class="fv__title"><span>笑顔輝く</span>寄り添う介護</h2>
+                <h2 class="fv__title"><span>笑顔輝く</span><br><span>寄り添う介護</span></h2>
                 <p class="fv__message">ヴィラとびしまは、<br>安心と交流が自然に息づく介護を<br>目指しています</p>
             </div>
             <div class="fv__img-wrap">
@@ -21,13 +21,13 @@
             </div>
             <div class="fv__tree-item-left"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon-tree02.png')); ?>" alt=""></div>
 
+            <div class="fv__banner inner">
+                <a href="<?php echo esc_url(home_url("/availability")) ?>">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/images/common/fv_banner.png')); ?>" alt="空き状況確認・お問い合わせバナー">
+                </a>
+            </div>
         </div>
     </section>
-    <div class="fv__banner inner">
-        <a href="<?php echo esc_url(home_url("/contact")) ?>">
-            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/fv_banner.png')); ?>" alt="空き状況確認・お問い合わせバナー">
-        </a>
-    </div>
 
     <section class="news js-fadeIn">
         <div class="news__inner inner">
@@ -155,8 +155,10 @@
                                     <span class="about__link-text">施設について詳しくこちら</span>
                                 </a>
                                 <div class="about__notice">
-                                    <span class="about__notice-icon">▶︎</span>
-                                    <p class="about__notice-text">介護職員等特定処遇改善加算</p>
+                                    <a href="<?php echo esc_url(home_url("/")) ?>">
+                                        <span class="about__notice-icon">▶︎</span>
+                                        <p class="about__notice-text">介護職員等特定処遇改善加算</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

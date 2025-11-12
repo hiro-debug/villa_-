@@ -4,11 +4,13 @@
       <div class="footer__main">
         <div class="footer__info">
           <div class="footer__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" alt="介護老人保健施設ヴィラとびしまのロゴマーク" loading="lazy">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" alt="介護老人保健施設ヴィラとびしまのロゴマーク" loading="lazy">
+            </a>
           </div>
           <div class="footer__contact">
             <p class="footer__address">愛知県海部郡飛島村服岡4-1</p>
-            <p class="footer__tel">TEL:0567-52-229</p>
+            <p class="footer__tel"><a href="tel:056752229">TEL:0567-52-229</a></p>
           </div>
         </div>
         <div class="footer__nav">

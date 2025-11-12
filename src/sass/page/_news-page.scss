@@ -3,16 +3,21 @@
 .news-page__content-inner.inner {
   max-width: 600px;
   margin-inline: auto;
+  margin-top: rem(60);
   @include mq("md") {
     max-width: 1163px;
   }
 }
 
 .news-page__content {
-  margin-top: rem(80);
+  margin-top: rem(64);
 
   @include mq("md") {
-    margin-top: rem(109);
+    margin-top: rem(160);
+  }
+  @include mq('xl'){
+    margin-top: rem(125);
+
   }
 }
 
@@ -285,14 +290,15 @@
 
 // ニュースフィルター用のアニメーションクラス
 .news-page__post-item {
+  transition: opacity 0.2s ease; // 0.3s → 0.2s に短縮
   opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.news-page__post-item.is-hidden {
-  opacity: 0;
-}
-
-.news-page__post-item.is-display-none {
-  display: none;
+  
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  &.is-display-none {
+    display: none;
+  }
 }

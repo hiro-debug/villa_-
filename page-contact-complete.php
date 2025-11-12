@@ -1,9 +1,18 @@
 <?php get_header(); ?>
 <main class="contact-complete-page layout-page">
-    <section class="contact-complete-page__mv mv">
-        <div class="contact-complete-page__mv-titleWrap mv__titleWrap">
-            <p class="contact-complete-page__mv-titleEn mv__titleEn">Contact</p>
-            <h1 class="contact-complete-page__mv-titleJa mv__titleJa">お問い合わせ</h1>
+<section class="contact-page__mv mv">
+        <div class="contact-page__mv-titleWrap mv__titleWrap">
+            <p class="contact-page__mv-titleEn mv__titleEn">Contact</p>
+            <h1 class="contact-page__mv-titleJa mv__titleJa">お問い合わせ</h1>
+        </div>
+        <div class="contact-page__mv-img mv__img">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_contact.jpg')); ?>" alt="">
+        </div>
+        <div class="contact-page__mv-tree mv__tree">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_tree.png')); ?>" alt="">
+        </div>
+        <div class="contact-page__mv-bg mv__dot">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_mv-dot.png')); ?>" alt="">
         </div>
     </section>
     <div class="breadcrumbs inner">

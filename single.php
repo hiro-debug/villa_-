@@ -11,6 +11,9 @@
         <div class="news-page__mv-tree mv__tree">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_tree.png')); ?>" alt="">
         </div>
+        <div class="news-page__mv-dot archive-mv__tree mv__dot">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_mv-dot.png')); ?>" alt="">
+        </div>
     </section>
     <section class="single-page__content">
         <div class="breadcrumbs inner">

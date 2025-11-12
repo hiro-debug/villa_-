@@ -16,8 +16,8 @@
 .footer__main-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   @include mq("md") {
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 7%;
   }
@@ -32,10 +32,15 @@
 .footer__logo {
   width: 80%;
   margin-inline: auto;
+  max-width: rem(300);
   @include mq("md") {
     width: rem(258);
     margin-inline: 0;
   }
+}
+
+.footer__logo a:hover {
+  opacity: 0.6;
 }
 
 .footer__logo-icon {
@@ -86,6 +91,10 @@
   margin: 0;
 }
 
+.footer__tel a {
+  padding: rem(10);
+}
+
 .footer__nav {
   margin-top: rem(16);
   font-family: $second-font-family;
@@ -118,7 +127,7 @@
   gap: rem(40);
   margin-bottom: rem(50);
   flex-direction: column;
-  margin-top: rem(60);
+  margin-top: rem(28);
 
   @include mq("md") {
     flex-direction: row;

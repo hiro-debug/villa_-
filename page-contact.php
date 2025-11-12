@@ -11,6 +11,9 @@
         <div class="contact-page__mv-tree mv__tree">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_tree.png')); ?>" alt="">
         </div>
+        <div class="contact-page__mv-bg mv__dot">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_mv-dot.png')); ?>" alt="">
+        </div>
     </section>
     <div class="breadcrumbs inner">
         <?php if (function_exists('bcn_display')) { ?>
@@ -59,7 +62,6 @@
 
             
         </div>
-        <?php get_template_part('template-parts/com-banner'); ?>
     </section>
 </main>
 <?php get_footer(); ?>

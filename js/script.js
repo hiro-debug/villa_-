@@ -153,71 +153,87 @@ links.forEach(function (link) {
       // ニュースフィルター機能
       const filterButtons = document.querySelectorAll('.news-page__filter-btn');
       const newsPosts = document.querySelectorAll('.news-page__post-item');
-
+      const postsContainer = document.querySelector('.news-page__posts');
+      
       filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-          // アクティブボタンの切り替え
           filterButtons.forEach(btn => btn.classList.remove('news-page__filter-btn--active'));
           this.classList.add('news-page__filter-btn--active');
-
-          // フィルターカテゴリの取得
-          const filterCategory = this.textContent.trim();
-
-          // 表示・非表示する要素を事前に分類
+      
+          const filterCategory = this.getAttribute('data-category');
+      
           const postsToShow = [];
           const postsToHide = [];
-
+      
           newsPosts.forEach(post => {
-            const postTag = post.querySelector('.news-page__post-tag');
-            const postCategory = postTag ? postTag.textContent.trim() : '';
-
-            if (filterCategory === 'すべて' || postCategory === filterCategory) {
+            const postCategory = post.getAttribute('data-category');
+      
+            if (filterCategory === 'all' || postCategory === filterCategory) {
               postsToShow.push(post);
             } else {
               postsToHide.push(post);
             }
           });
-
-          // 非表示にする要素を処理
-          postsToHide.forEach(post => {
-            // すでに非表示の場合はスキップ
-            if (post.classList.contains('is-display-none')) {
-              return;
-            }
-
-            // トランジション終了後にdisplay: noneを追加
-            const handleTransitionEnd = (e) => {
-              if (e.propertyName === 'opacity') {
-                e.target.classList.add('is-display-none');
-                e.target.removeEventListener('transitionend', handleTransitionEnd);
-              }
-            };
-
-            post.addEventListener('transitionend', handleTransitionEnd);
+      
+          // Step 1: 現在の高さを固定
+          const currentHeight = postsContainer.offsetHeight;
+          postsContainer.style.height = currentHeight + 'px';
+          postsContainer.style.overflow = 'hidden';
+      
+          // Step 2: すべてフェードアウト
+          newsPosts.forEach(post => {
             post.classList.add('is-hidden');
           });
-
-          // 表示する要素を処理
-          // まずdisplay: noneを解除
-          postsToShow.forEach(post => {
-            if (post.classList.contains('is-display-none')) {
-              post.classList.remove('is-display-none');
-              // 初期状態を透明に設定
-              post.classList.add('is-hidden');
-            }
-          });
-
-          // リフローを一度だけ強制
-          if (postsToShow.length > 0) {
-            postsToShow[0].offsetHeight;
-          }
-
-          // 一度のrequestAnimationFrameで全要素をフェードイン
-          requestAnimationFrame(() => {
-            postsToShow.forEach(post => {
-              post.classList.remove('is-hidden');
+      
+          // Step 3: フェードアウト完了後に処理
+          setTimeout(() => {
+            // 非表示要素
+            postsToHide.forEach(post => {
+              post.classList.add('is-display-none');
             });
-          });
+      
+            // 表示要素
+            postsToShow.forEach(post => {
+              post.classList.remove('is-display-none');
+            });
+      
+            // リフロー
+            if (postsToShow.length > 0) {
+              postsToShow[0].offsetHeight;
+            }
+      
+            // Step 4: 新しい高さを計算して適用
+            requestAnimationFrame(() => {
+              // 一時的にautoにして新しい高さを取得
+              postsContainer.style.height = 'auto';
+              const newHeight = postsContainer.offsetHeight;
+              postsContainer.style.height = currentHeight + 'px';
+      
+              // リフロー
+              postsContainer.offsetHeight;
+      
+              // 高さのトランジションを設定
+              postsContainer.style.transition = 'height 0.3s ease';
+      
+              // 次のフレームで新しい高さとフェードインを同時実行
+              requestAnimationFrame(() => {
+                postsContainer.style.height = newHeight + 'px';
+      
+                // フェードイン
+                postsToShow.forEach(post => {
+                  post.classList.remove('is-hidden');
+                });
+              });
+            });
+      
+            // Step 5: アニメーション完了後に高さをautoに戻す
+            setTimeout(() => {
+              postsContainer.style.height = '';
+              postsContainer.style.overflow = '';
+              postsContainer.style.transition = '';
+            }, 500); // 0.2s (フェードアウト) + 0.3s (高さ変更) = 0.5s
+      
+          }, 200); // フェードアウトの時間
         });
-      });
-});
+      });    
+    });

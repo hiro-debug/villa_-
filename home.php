@@ -1,17 +1,22 @@
 <?php get_header(); ?>
 <main class="news-page layout-page">
-    <section class="news-page__mv mv">
+<section class="news-page__mv mv">
         <div class="news-page__mv-titleWrap mv__titleWrap">
             <p class="news-page__mv-titleEn mv__titleEn">Information</p>
-            <h1 class="news-page__mv-titleJa mv__titleJa">お知らせ一覧</h1>
+            <h2 class="news-page__mv-titleJa mv__titleJa">お知らせ</h2>
         </div>
-        <div class="news-page__mv-img mv__img">
-            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_info.jpg')); ?>" alt="施設利用者と男女のスタッフの素敵な笑顔です">
-        </div>
-        <div class="news-page__mv-tree mv__tree">
+        <!-- <div class="news-page__mv-img mv__img">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_info.jpg')); ?>" alt="">
+        </div> -->
+        <div class="news-page__mv-tree mv__tree archive-mv__tree">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_tree.png')); ?>" alt="">
         </div>
+        <div class="news-page__mv-dot archive-mv__tree mv__dot">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_mv-dot.png')); ?>" alt="">
+        </div>
     </section>
+
+    <section class="news-page__content">
     <div class="breadcrumbs inner">
         <?php if (function_exists('bcn_display')) { ?>
             <div class=vocab='http://schema.org/' typeof=>
@@ -21,7 +26,6 @@
     </div>
 
 
-    <section class="news-page__content">
         <div class="news-page__content-inner inner">
         <div class="news-page__wrap js-fadeIn">
     <div class="news-page__filter">
@@ -126,6 +130,11 @@
     
 </div> <!-- ← news-page__wrap の終了 -->
             </div>
+            <div class="availability__slider page-slider">
+            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_info-slider01.jpg')); ?>" alt="男性スタッフが笑顔でお話ししています"></div>
+            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_info-slider02.jpg')); ?>" alt="女性スタッフが笑顔でお話ししています"></div>
+            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_info-slider03.jpg')); ?>" alt="男性スタッフが笑顔で介助をしています"></div>
+        </div>
     </section>
     <?php get_template_part('template-parts/com-banner'); ?>
 

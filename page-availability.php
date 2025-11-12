@@ -11,6 +11,9 @@
         <div class="availability__mv-tree mv__tree">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/common/mv_tree.png')); ?>" alt="">
         </div>
+        <div class="availability__mv-dot mv__dot">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_mv-dot.png')); ?>" alt="">
+        </div>
 
 
     </section>
@@ -42,22 +45,25 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        $companyInfo = get_field('table_am');
+                        ?>
                         <tr class="availability__table-row">
                             <td class="availability__table-cell first">9:10～11:30</td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_mon']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--limited">▲</span>
+                                <span class="availability__status availability__status--limited"><?php echo $companyInfo['acf_thu']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--unavailable">×</span>
+                                <span class="availability__status availability__status--unavailable"><?php echo $companyInfo['acf_wed']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--unavailable">×</span>
+                                <span class="availability__status availability__status--unavailable"><?php echo $companyInfo['acf_thu']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_fri']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
                                 <span class="availability__status availability__status--closed">／</span>
@@ -66,22 +72,26 @@
                                 <span class="availability__status availability__status--closed">／</span>
                             </td>
                         </tr>
+                        <?php
+                        $companyInfo = get_field('table_pm');
+                        ?>
+
                         <tr class="availability__table-row">
                             <td class="availability__table-cell first">9:10～16:20</td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_mon-pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_thu-pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_wed-pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_thu-pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $companyInfo['acf_fri-pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
                                 <span class="availability__status availability__status--closed">／</span>
@@ -106,22 +116,30 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        $capacity = get_field('table_fe');
+                        ?>
+
                         <tr class="availability__table-row">
                             <td class="availability__table-cell first">女性</td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $capacity['private_fe']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--limited">▲</span>
+                                <span class="availability__status availability__status--limited"><?php echo $capacity['group_fe']; ?></span>
                             </td>
                         </tr>
+                        <?php
+                        $capacity = get_field('table_ma');
+                        ?>
+
                         <tr class="availability__table-row">
                             <td class="availability__table-cell first">男性</td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $capacity['private_ma']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $capacity['group_ma']; ?></span>
                             </td>
                         </tr>
                     </tbody>
@@ -143,22 +161,26 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        $invite = get_field('invite_liha');
+                        ?>
+
                         <tr class="availability__table-row">
                             <td class="availability__table-cell first">午前</td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invite['invite_liha-mon-am']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--limited">▲</span>
+                                <span class="availability__status availability__status--limited"><?php echo $invite['invite_liha-tue-am']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--unavailable">×</span>
+                                <span class="availability__status availability__status--unavailable"><?php echo $invite['invite_liha-wed-am']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--unavailable">×</span>
+                                <span class="availability__status availability__status--unavailable"><?php echo $invite['invite_liha-thu-am']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invite['invite_liha-fri-am']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
                                 <span class="availability__status availability__status--closed">／</span>
@@ -167,22 +189,26 @@
                                 <span class="availability__status availability__status--closed">／</span>
                             </td>
                         </tr>
+                        <?php
+                        $invitePm = get_field('invite_liha_pm');
+                        ?>
+
                         <tr class="availability__table-row">
                             <td class="availability__table-cell first">午後</td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invitePm['invite_liha_mon_pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invitePm['invite_liha_thu_pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invitePm['invite_liha_wed_pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invitePm['invite_liha_thu_pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
-                                <span class="availability__status availability__status--available">〇</span>
+                                <span class="availability__status availability__status--available"><?php echo $invitePm['invite_liha_fri_pm']; ?></span>
                             </td>
                             <td class="availability__table-cell availability__table-cell--data">
                                 <span class="availability__status availability__status--closed">／</span>
@@ -196,6 +222,11 @@
                 <p class="availability__table-attention">〇:すぐにご利用いただけます　▲:お問い合わせください　×:お待ち願います</p>
             </div>
 
+        </div>
+        <div class="availability__slider page-slider">
+            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_ravailability-slider01.jpg')); ?>" alt="ヴィラとびしまの個室の様子です"></div>
+            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_ravailability-slider02.jpg')); ?>" alt="4人部屋の様子です"></div>
+            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_ravailability-slider03.jpg')); ?>" alt="利用者とスタッフが笑顔で交流する温かい介護サービスの様子"></div>
         </div>
     </section>
 
