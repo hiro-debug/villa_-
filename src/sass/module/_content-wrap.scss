@@ -1,0 +1,9 @@
+@use "global" as *;
+.content-wrap{
+    padding: rem(40) rem(28);
+    background-color: $white;
+
+    @include mq('md'){
+      padding: rem(60) rem(90);
+    }
+}

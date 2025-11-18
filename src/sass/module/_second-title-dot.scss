@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.second-title-dot {
+  position: relative;
+  font-size: rclamp(18, 24, 375, 1440);
+  font-weight: $bold;
+  line-height: 0.83;
+  color: $black;
+  font-family: $second-font-family;
+  line-height: 1.2;
+  position: relative;
+}
+
+.second-title-dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(-14);
+  transform: translateY(-50%);
+  width: rem(7);
+  height: rem(7);
+  border-radius: 50%;
+  background-color: #95782c;
+
+  @include mq("md") {
+    width: rem(10);
+    height: rem(10);
+    left: rem(-22);
+  }
+}

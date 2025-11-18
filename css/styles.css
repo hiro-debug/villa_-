@@ -209,6 +209,10 @@ select::-ms-expand {
   }
 }
 
+.breadcrumbs.inner {
+  max-width: 1408px;
+}
+
 .single .breadcrumbs {
   background-color: #fff;
 }
@@ -511,6 +515,17 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .com-banner__tel-number {
     font-size: 2.25rem;
+  }
+}
+
+.content-wrap {
+  padding: 40px 28px;
+  padding: 2.5rem 1.75rem;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .content-wrap {
+    padding: 3.75rem 5.625rem;
   }
 }
 
@@ -1491,6 +1506,10 @@ body.active {
   }
 }
 
+.inner.page-inner {
+  max-width: 1170px;
+}
+
 .js-fadeIn {
   opacity: 0;
   -webkit-transform: translateY(35px);
@@ -1718,6 +1737,64 @@ body.active {
   font-size: clamp(1.5rem, 1.323943662rem + 0.7511737089vw, 2rem);
 }
 
+.second-title-dot {
+  position: relative;
+  font-size: clamp(18px, 15.887px + 0.5633802817vw, 24px);
+  font-size: clamp(1.125rem, 0.9929577465rem + 0.5633802817vw, 1.5rem);
+  font-weight: 700;
+  line-height: 0.83;
+  color: #333;
+  font-family: "Zen Old Mincho", serif;
+  line-height: 1.2;
+  position: relative;
+}
+
+.second-title-dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  left: -0.875rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 7px;
+  width: 0.4375rem;
+  height: 7px;
+  height: 0.4375rem;
+  border-radius: 50%;
+  background-color: #95782c;
+}
+@media screen and (min-width: 768px) {
+  .second-title-dot::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    left: -1.375rem;
+  }
+}
+
+.second-title-underline {
+  color: #2e4e7e;
+  font-size: clamp(18px, 17.295px + 0.1877934272vw, 20px);
+  font-size: clamp(1.125rem, 1.0809859155rem + 0.1877934272vw, 1.25rem);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: "Zen Old Mincho", serif;
+  position: relative;
+}
+
+.second-title-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  bottom: -0.625rem;
+  background-color: #e6bb65;
+  height: 1px;
+  width: 45px;
+  width: 2.8125rem;
+}
+
 .service {
   padding: 80px 0;
   padding: 5rem 0;
@@ -1835,11 +1912,486 @@ body.active {
   color: #666666;
 }
 
-.test {
-  font-size: 100px;
-  font-size: 6.25rem;
-  background-color: #333;
-  color: #fff;
+.about-page__content {
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__content {
+    margin-top: 6.875rem;
+  }
+}
+
+.about-page__inner {
+  max-width: 1122px;
+  max-width: 70.125rem;
+  margin: 0 auto;
+}
+
+.about-page__info-wrap-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .about-page__info-wrap-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.about-page__info-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-page__info {
+    width: 40%;
+  }
+}
+
+.about-page__info-wrapImg {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__info-wrapImg {
+    width: 28.375rem;
+    margin-top: 0;
+  }
+}
+
+.about-page__logo {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  max-width: 375px;
+  max-width: 23.4375rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__logo {
+    width: 59%;
+    margin-top: 0;
+    margin-inline: 0;
+  }
+}
+
+.about-page__details {
+  font-weight: 300;
+}
+
+.about-page__address {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+.about-page__address-text,
+.about-page__tel {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .about-page__address-text,
+  .about-page__tel {
+    font-size: 1.125rem;
+  }
+}
+
+.about-page__business-text {
+  font-weight: 300;
+  line-height: 1.36;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__business-text {
+    margin-top: 1.5625rem;
+  }
+}
+
+.about-page__business-list li {
+  text-indent: -16px;
+  text-indent: -1rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__business-list li {
+    text-indent: 0;
+    padding-left: 0;
+    font-size: 1rem;
+  }
+}
+
+.about-page__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  gap: 1.875rem;
+}
+
+.about-page__title-line {
+  width: 100%;
+  height: 1px;
+  height: 0.0625rem;
+  background-color: #E6BB65;
+}
+
+.about-page__title-main {
+  font-size: clamp(24px, 21.183px + 0.7511737089vw, 32px);
+  font-size: clamp(1.5rem, 1.323943662rem + 0.7511737089vw, 2rem);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #333;
+  font-family: "Zen Old Mincho", serif;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__title-main {
+    margin-top: 1.25rem;
+  }
+}
+
+.about-page__description {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.about-page__description-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-page__description-list li {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-indent: -1em;
+  padding-left: 1em;
+  font-weight: 300;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.about-page__description-list li + li {
+  margin-top: 18px;
+  margin-top: 1.125rem;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .about-page__description-list li + li {
+    margin-top: 1.5625rem;
+  }
+}
+
+.about-page__company-info {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__company-info {
+    margin-top: 2.0625rem;
+  }
+}
+
+.about-page__company-info-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  gap: 0.5rem;
+  padding: 20px 0 12px;
+  padding: 1.25rem 0 0.75rem;
+  border-bottom: 1px solid #ece5d3;
+}
+@media screen and (min-width: 768px) {
+  .about-page__company-info-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1.8125rem 0 0.9375rem;
+    gap: 1rem;
+  }
+}
+
+.about-page__company-info-item:last-child .about-page__company-info-header {
+  border-bottom: none;
+}
+
+.about-page__company-info-label {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #034495;
+  font-family: "Zen Old Mincho", serif;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about-page__company-info-label {
+    width: 11.25rem;
+    font-size: 1.125rem;
+    text-align: left;
+  }
+}
+
+.about-page__company-info-item:last-child .about-page__company-info-header {
+  border-bottom: none;
+}
+
+.about-page__company-info-value {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+}
+
+.about-page__company-info-value p {
+  margin: 0;
+}
+
+.about-page__company-info-value span {
+  padding-left: 3em;
+}
+
+.about-pageMap__wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 74%;
+  margin-top: 28px;
+  margin-top: 1.75rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .about-pageMap__wrap {
+    padding-top: 24%;
+    border-radius: 1.25rem;
+  }
+}
+
+.bout-pageMap__access iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-page__disclosure {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure {
+    margin-top: 2.625rem;
+  }
+}
+
+.about-page__disclosure-container {
+  background-color: #fff;
+  padding: 40px 28px;
+  padding: 2.5rem 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-container {
+    padding: 3.75rem 4.375rem;
+  }
+}
+
+.about-page__disclosure-item {
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid #95782c;
+}
+
+.about-page__disclosure-item + .about-page__disclosure-item {
+  margin-top: 28px;
+  margin-top: 1.75rem;
+}
+
+.about-page__disclosure-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.about-page__disclosure-icon {
+  width: 10px;
+  width: 0.625rem;
+  height: 10px;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: #95782c;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.about-page__disclosure-body {
+  padding-left: 10px;
+  padding-left: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-body {
+    padding-left: 1.5rem;
+  }
+}
+
+.about-page__disclosure-list {
+  list-style: none;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-list {
+    margin-top: 2rem;
+  }
+}
+
+.about-page__disclosure-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+  gap: 1.125rem;
+}
+
+.about-page__disclosure-list-item + .about-page__disclosure-list-item {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-list-item + .about-page__disclosure-list-item {
+    margin-top: 0;
+  }
+}
+
+.about-page__disclosure-arrow {
+  font-size: 7px;
+  font-size: 0.4375rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #3a5abf;
+}
+
+.about-page__disclosure-text {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #3a5abf;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-text {
+    line-height: 1.7;
+  }
+}
+
+.about-page__disclosure-line {
+  display: none;
+  width: 1px;
+  width: 0.0625rem;
+  height: 100%;
+  background-color: #95782c;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-line {
+    display: block;
+  }
+}
+
+.about-page__disclosure-description {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.67;
+  color: #333;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-description {
+    font-size: 1.125rem;
+    margin-top: 2.625rem;
+  }
+}
+
+.about-page__disclosure-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (min-width: 768px) {
+  .about-page__disclosure-link {
+    gap: 1.125rem;
+  }
+}
+
+.about-page__disclosure-link--external {
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .availability__table {

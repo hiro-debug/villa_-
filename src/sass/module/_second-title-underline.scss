@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.second-title-underline {
+  color: #2e4e7e;
+  font-size: rclamp(18, 20, 375, 1440);
+  letter-spacing: 0.05em;
+  font-weight: $bold;
+  line-height: 1.5;
+  font-family: $second-font-family;
+  position: relative;
+}
+.second-title-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: rem(-10);
+  background-color: #e6bb65;
+  height: 1px;
+  width: rem(45);
+}
