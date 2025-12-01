@@ -42,12 +42,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
-  });
+  // topBtn.click(function () {
+  //   $('body,html').animate({
+  //     scrollTop: 0
+  //   }, 300, 'swing');
+  //   return false;
+  // });
+
+  
 
  // ハンバーガーメニュー
  $(function () {
@@ -89,19 +91,112 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 });
 
+  // サービスページ コンサルティングアコーディオン
+  $(".service-page__button-link").each(function () {
+    const $button = $(this);
+    const wrapId = $button.attr("aria-controls");
+    const $wrap = $("#" + wrapId);
+
+    if ($wrap.length) {
+      const expandedText = $button.attr("data-text-expanded") || "閉じる";
+      const collapsedText = $button.attr("data-text-collapsed") || "もっと見る";
+
+      // 初期状態を閉じた状態にする
+      $wrap.hide();
+      $button.text(collapsedText).attr("aria-expanded", "false").removeClass("is-active");
+
+      $button.on("click", function (e) {
+        e.preventDefault();
+
+        const isExpanded = $(this).attr("aria-expanded") === "true";
+        const nextState = !isExpanded;
+
+        $(this)
+          .attr("aria-expanded", nextState.toString())
+          .text(nextState ? expandedText : collapsedText)
+          .toggleClass("is-active", nextState);
+
+        $wrap.stop().slideToggle(600, function () {
+          $wrap.toggleClass("is-open", $wrap.is(":visible"));
+        });
+      });
+    }
+  });
+
+
+  const height = $(".js-header").height();
+  $("main").css("margin-top", height);
+});
+// ページ内スクロール
+$(function () {
+  // ヘッダーの高さ取得
+  const headerHeight = $(".js-header").height();
+  $('a[href^="#"]').click(function () {
+    const speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - headerHeight;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
  // ページ内リンク(headerの高さ分を計算)
-  $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let offset = 50; // 追加でずらすピクセル数分変更
-    let header = $('header').innerHeight();
-    let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
-    return false;
-  });
+  // $(document).on('click', 'a[href*="#"]', function () {
+  //   let time = 400;
+  //   let offset = 50; // 追加でずらすピクセル数分変更
+  //   let header = $('header').innerHeight();
+  //   let target = $(this.hash);
+  //   if (!target.length) return;
+  //   let targetY = target.offset().top - header - offset;
+  //   $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+  //   return false;
+  // });
+
+  // ページロード時のハッシュスクロール処理
+  // if (window.location.hash) {
+  //   // ページの自動スクロールを防ぐため、ハッシュを一時的に削除
+  //   let hash = window.location.hash;
+  //   history.scrollRestoration = 'manual';
+  //   history.replaceState(null, null, ' ');
+
+  //   // ページ読み込み完了後にスクロール
+  //   $(window).on('load', function() {
+  //     let target = $(hash);
+  //     if (target.length) {
+  //       let offset = 50;
+  //       let header = $('header').innerHeight();
+  //       let targetY = target.offset().top - header - offset;
+
+  //       // ハッシュを復元
+  //       history.replaceState(null, null, hash);
+
+  //       // スムーズにスクロール
+  //       $('html, body').animate({ scrollTop: targetY }, 400, 'swing');
+  //     }
+  //   });
+  // }
+
+//   $('a[href^="#"]').click(function () {
+//     // スクロールの速度
+//     var speed = 400; // ミリ秒
+//     // アンカーの値取得
+//     var href = $(this).attr("href");
+//     // 移動先を取得
+//     var target = $(href == "#" || href == "" ? 'html' : href);
+//     // ヘッダーの高さを取得
+//     var header = $('header').innerHeight();
+//     // 追加でずらすピクセル数
+//     var offset = 300;
+//     // 移動先を数値で取得（ヘッダー分とオフセット分を引く）
+//     var position = target.offset().top - header - offset;
+//     // スムーススクロール
+//     $('body,html').animate({ scrollTop: position }, speed, 'swing');
+//     return false;
+// });
+
 
 });
 
@@ -235,5 +330,18 @@ links.forEach(function (link) {
       
           }, 200); // フェードアウトの時間
         });
-      });    
+      });
+
+    });
+
+    // FAQアコーディオン
+    $('.js-faq-question').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('is-open');
+    });
+
+    // サービスページ ADLアコーディオン
+    $('.service-page__adl-content').on('click', function () {
+        $(this).find('.service-page__adl-list').slideToggle();
+        $(this).find('.service-page__adl-header').toggleClass('is-open');
     });

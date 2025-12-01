@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="header layout-header">
+  <header class="header layout-header js-header">
     <div class="header__inner">
       <?php if (is_front_page()) : ?>
         <h1 class="header__logo">
@@ -30,22 +30,22 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/#about')); ?>">施設紹介</a>
+            <a href="<?php echo esc_url(home_url('/about')); ?>">施設紹介</a>
           </li>
           <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/#internal')); ?>">内科</a>
+            <a href="<?php echo esc_url(home_url('/medical-institution')); ?>">内科</a>
           </li>
           <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/#service')); ?>">サービス・料金</a>
+            <a href="<?php echo esc_url(home_url('/service')); ?>">サービス・料金</a>
           </li>
           <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/#ryoseikai')); ?>">良斉会</a>
+            <a href="<?php echo esc_url(home_url('/ryousaikai')); ?>">良斉会</a>
           </li>
           <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/#approach')); ?>">取り組み</a>
+            <a href="<?php echo esc_url(home_url('/attempt')); ?>">ヴィラとびしまの魅力</a>
           </li>
           <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/#recruit')); ?>">採用情報</a>
+            <a href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
           </li>
         </ul>
       </nav>
@@ -71,6 +71,8 @@
           </a>
         </div>
       </div>
+      <div class="header__tel-icon u-mobile"><a href="tel:0567522290"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_tel.png')); ?>" alt=""></a></div>
+      <div class="header__mail u-mobile"><a href="<?php echo esc_url(home_url("/contact")); ?>"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/icon_mail-blue.png')); ?>" alt=""></a></div>
 
       <button class="header__hamburger js-hamburger">
         <span></span>
@@ -85,16 +87,16 @@
               <a href="<?php echo esc_url(home_url('/about')); ?>">施設紹介</a>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/#internal')); ?>">内科</a>
+              <a href="<?php echo esc_url(home_url('/medical-institution')); ?>">内科</a>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/#service')); ?>">サービス・料金</a>
+              <a href="<?php echo esc_url(home_url('/service')); ?>">サービス・料金</a>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/#ryoseikai')); ?>">良斉会</a>
+              <a href="<?php echo esc_url(home_url('/ryousaikai')); ?>">良斉会</a>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/#approach')); ?>">取り組み</a>
+              <a href="<?php echo esc_url(home_url('/attempt')); ?>">ヴィラとびしまの魅力</a>
             </li>
             <li class="header__drawer-item">
               <a href="<?php echo esc_url(home_url('/#recruit')); ?>">採用情報</a>

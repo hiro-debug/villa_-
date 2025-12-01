@@ -9,8 +9,6 @@
 }
 
 .about-page__inner {
-  max-width: rem(1122);
-  margin: 0 auto;
 }
 
 .about-page__info-wrap-container {
@@ -42,6 +40,13 @@
   @include mq("md") {
     width: rem(454);
     margin-top: 0;
+  }
+
+  img{
+
+      aspect-ratio: 454 / 484;
+      object-fit: cover;
+    
   }
 }
 
@@ -237,7 +242,7 @@
   overflow: hidden;
 
   @include mq('md'){
-    padding-top: 24%;
+    padding-top: 26%;
     border-radius: rem(20);
 
   }
@@ -359,7 +364,7 @@
 }
 
 .about-page__disclosure-description {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: $light;
   line-height: 1.67;
   color: $black;

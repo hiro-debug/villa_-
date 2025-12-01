@@ -34,23 +34,23 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">介護老人保健施設とは</a>
+              <a href="<?php echo home_url('/about#facility-info'); ?>" class="footer__menu-link">介護老人保健施設とは</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">施設概要</a>
+              <a href="<?php echo home_url('/about#facility-info2'); ?>" class="footer__menu-link">施設概要</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">アクセス</a>
+              <a href="<?php echo home_url('/about#access'); ?>" class="footer__menu-link">アクセス</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">介護職員等特定処遇改善加算にかかる情報公</a>
+              <a href="<?php echo home_url('/about#treatment-improvement'); ?>" class="footer__menu-link">介護職員等特定処遇改善加算にかかる情報公</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">所定疾患施設療養費算定状況</a>
+              <a href="<?php echo home_url('/about#medical-fee-calculation'); ?>" class="footer__menu-link">所定疾患施設療養費算定状況</a>
             </li>
           </ul>
         </div>
@@ -59,31 +59,31 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">入所サービス</a>
+              <a href="<?php echo home_url('/service#residential-care'); ?>" class="footer__menu-link">入所サービス</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">ショートステイ</a>
+              <a href="<?php echo home_url('/service#short-stay'); ?>" class="footer__menu-link">ショートステイ</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">デイケア</a>
+              <a href="<?php echo home_url('/service#day-rehab'); ?>" class="footer__menu-link">デイケア</a>
             </li>
-            <li class="footer__menu-item">
-              <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">訪問サービス</a>
-            </li>
-            <li class="footer__menu-item">
+            <!-- <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
               <a href="#" class="footer__menu-link">訪問サービス</a>
+            </li> -->
+            <li class="footer__menu-item">
+              <span class="footer__menu-link-icon">▶︎</span>
+              <a href="<?php echo home_url('/service#home-rehab'); ?>" class="footer__menu-link">訪問サービス</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">料金案内</a>
+              <a href="<?php echo home_url('/service#price-list'); ?>" class="footer__menu-link">料金案内</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">ご利用例の紹介</a>
+              <a href="<?php echo home_url('/service#usage-examples'); ?>" class="footer__menu-link">ご利用例の紹介</a>
             </li>
           </ul>
         </div>
@@ -117,11 +117,11 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">ヴィラ飛島の基本理念</a>
+              <a href="<?php echo home_url('/ryousaikai'); ?>" class="footer__menu-link">ヴィラ飛島の基本理念</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">プロフィール</a>
+              <a href="<?php echo home_url('/ryousaikai#profile'); ?>" class="footer__menu-link">プロフィール</a>
             </li>
           </ul>
         </div>

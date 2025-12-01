@@ -2,16 +2,24 @@
 .page-slider{
     max-width: 1124px;
     display: flex;
+    flex-direction: column;
     gap: rem(25);
     margin-top: rem(80);
 
     @include mq('md'){
       margin-top: rem(100);
+      flex-direction: row;
       margin-inline: auto;
     }
 }
 
-.page-slider__item {
-
+.page-slider__item{
+  @include mq('md'){
+    width: 33.3%;
+  }
 }
 
+.page-slider__item img{
+  aspect-ratio: 358 / 239;
+  object-fit: cover;
+}

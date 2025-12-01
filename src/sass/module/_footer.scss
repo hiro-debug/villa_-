@@ -140,6 +140,7 @@
   @include mq("xl") {
     width: 72%;
     gap: 10%;
+    row-gap: rem(57);
   }
 }
 

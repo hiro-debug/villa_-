@@ -16,5 +16,9 @@
 }
 
 .inner.page-inner {
-  max-width: 1170px;
+  
+  @include mq('md'){
+    max-width: 1170px;
+    
+  }
 }

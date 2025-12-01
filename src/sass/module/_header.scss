@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .header {
-  height: rem(80);
+  height: rem(64);
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@
 }
 
 .header__inner {
-  padding: 0 rem(20);
+  padding: 0 rem(8);
   height: inherit;
   display: flex;
   align-items: center;
@@ -44,15 +44,13 @@
   align-items: center;
   gap: rem(12);
   text-decoration: none;
-  width: rem(140);
+  width: rem(155);
   @include mq("md") {
     width: rem(160);
-    // height: rem(80);
   }
   @include mq("xl") {
     width: rem(187);
   }
-
 }
 
 .header__logo a:hover {
@@ -173,11 +171,9 @@
 
 .header__nav-item a:hover {
   opacity: 1;
-  
 }
 .header__nav-item a:hover::after {
   width: 68%;
-  
 }
 
 .header__contact {
@@ -279,6 +275,28 @@
   color: #fff;
 }
 
+.header__tel-icon {
+  position: absolute;
+  right: rem(116);
+  width: rem(35);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__mail {
+  position: absolute;
+  right: rem(66);
+  width: rem(28);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.3s;
+}
+
+.header__mail a:hover {
+  opacity: 0.6;
+}
+
+
 .header__hamburger {
   margin: 0;
   padding: 0;
@@ -288,7 +306,7 @@
   z-index: 999;
   width: rem(40);
   height: rem(40);
-  background-color: #f0c88c;
+  // background-color: #f0c88c;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 7px;
@@ -306,9 +324,9 @@
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: rem(20);
-  height: rem(2);
-  background-color: #fff;
+  width: rem(30);
+  height: rem(4);
+  background-color: #c54d7f;
   transition: 0.5s;
 }
 
@@ -325,7 +343,7 @@
 }
 
 .header__hamburger.is-open span:nth-of-type(1) {
-  top: 0;
+  top: 4px;
   transform: translateX(-50%) rotate(45deg);
 }
 
@@ -362,7 +380,6 @@
   display: flex;
   flex-direction: column;
   gap: rem(40);
-  
 }
 
 .header__drawer-list {

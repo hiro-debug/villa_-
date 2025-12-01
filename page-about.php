@@ -25,10 +25,10 @@
         <?php } ?>
     </div>
 
-    <section class="about-page__content">
+    <section class="about-page__content layout-content">
         <div class="about-page__inner inner page-inner">
             <div class="about-page__content-wrap content-wrap">
-                <div class="about-page__info-wrap-container">
+                <div class="about-page__info-wrap-container" id="facility-info">
                     <div class="about-page__info-wrap">
                         <div class="about-page__heading">
                             <div class="about-page__title-group">
@@ -47,9 +47,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-page__info-wrapImg"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about01.jpg')); ?>" alt="" loading="lazy"></div>
+                    <div class="about-page__info-wrapImg"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about01.jpg')); ?>" alt="愛知県飛島村の介護老人保健施設ヴィラとびしまの外観。白い多層階の建物と青と白の看板が設置されたモダンな施設。緑豊かな植栽に囲まれた清潔で明るい施設外観" width="454" height="484" loading="lazy"></div>
                 </div>
-                <div class="about-page__company-info">
+                <div class="about-page__company-info" id="facility-info2">
                     <div class="about-page__company-info-list">
                         <div class="about-page__company-info-item">
                             <div class="about-page__company-info-header">
@@ -112,13 +112,14 @@
                                 </dd>
                             </div>
                         </div>
-                        <div class="about-page__company-info-item">
+                        <div class="about-page__company-info-item" id="access">
                             <div class="about-page__company-info-header">
                                 <dt class="about-page__company-info-label">アクセス</dt>
                                 <dd class="about-page__company-info-value">
                                     <p>車　：東名阪自動車道蟹江ＩＣより西尾張中央道南へ約１０分</p>
                                     <p>電車：近鉄佐古木駅より車で約２０分
-                                    <br><span>近鉄蟹江駅（名古屋から急行・準急で１０分）より車で約１５分</span></p>
+                                        <br><span>近鉄蟹江駅（名古屋から急行・準急で１０分）より車で約１５分</span>
+                                    </p>
                                     <p>バス：近鉄線「蟹江」駅からバス１５分「神戸山」バス停前</p>
 
                                 </dd>
@@ -135,67 +136,66 @@
 
             <div class="about-page__disclosure">
                 <div class="about-page__disclosure-container">
-                    <div class="about-page__disclosure-item">
-                            <!-- <div class="about-page__disclosure-icon"></div> -->
-                            <h3 class="about-page__disclosure-title second-title-dot">所定疾患施設療養費算定状況</h3>
+                    <div class="about-page__disclosure-item" id="medical-fee-calculation">
+                        <h3 class="about-page__disclosure-title second-title-dot">所定疾患施設療養費算定状況</h3>
                         <div class="about-page__disclosure-body">
                             <ul class="about-page__disclosure-list">
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/h26.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">平成26年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/h27.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">平成27年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/h28.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">平成28年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/h29.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">平成29年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/h30.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">平成30年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/r01.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">平成31年/令和元年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/r02.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">令和2年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/r03.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">令和3年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/r04.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">令和4年度算定状況</span>
                                     </a>
                                 </li>
                                 <li class="about-page__disclosure-list-item">
-                                    <a href="#" class="about-page__disclosure-link">
+                                    <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/r05.pdf')); ?>" class="about-page__disclosure-link" target="_blank">
                                         <span class="about-page__disclosure-arrow">▶︎</span>
                                         <span class="about-page__disclosure-text">令和5年度算定状況</span>
                                     </a>
@@ -203,13 +203,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="about-page__disclosure-item">
-                            <h3 class="about-page__disclosure-title second-title-dot">介護職員等特定処遇改善加算にかかる情報公開（見える化要件）</h3>
+                    <div class="about-page__disclosure-item" id="treatment-improvement">
+                        <h3 class="about-page__disclosure-title second-title-dot">介護職員等特定処遇改善加算にかかる情報公開（見える化要件）</h3>
                         <div class="about-page__disclosure-body">
                             <div class="about-page__disclosure-content">
                                 <p class="about-page__disclosure-description">当法人の福祉・介護職員等特定処遇改善加算の取得状況と賃金以外の処遇改善に関する具体的な取り組みは以下を参照してください。</p>
                             </div>
-                            <a href="#" class="about-page__disclosure-link about-page__disclosure-link--external">
+                            <a href="<?php echo esc_url(get_theme_file_uri('/images/pdf/kaigo-kasan.pdf')); ?>" class="about-page__disclosure-link about-page__disclosure-link--external" target="_blank">
                                 <span class="about-page__disclosure-arrow">▶︎</span>
                                 <span class="about-page__disclosure-text">介護職員等特定処遇改善加算に係る公表について</span>
                             </a>
@@ -218,11 +218,11 @@
                 </div>
             </div>
 
-        </div>
-        <div class="availability__slider page-slider">
-            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about-slider01.jpg')); ?>" alt="ヴィラとびしまの個室の様子です"></div>
-            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about-slider02.jpg')); ?>" alt="4人部屋の様子です"></div>
-            <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about-slider03.jpg')); ?>" alt="利用者とスタッフが笑顔で交流する温かい介護サービスの様子"></div>
+            <div class="about-page__slider page-slider">
+                <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about-slider01.jpg')); ?>" alt="ヴィラとびしまの個室の様子です"></div>
+                <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about-slider02.jpg')); ?>" alt="4人部屋の様子です"></div>
+                <div class="page-slider__item"><img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/img_p-about-slider03.jpg')); ?>" alt="利用者とスタッフが笑顔で交流する温かい介護サービスの様子"></div>
+            </div>
         </div>
     </section>
 

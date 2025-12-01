@@ -1,0 +1,82 @@
+@use "global" as *;
+.medical-page__info-wrap-container {
+  display: flex;
+  flex-direction: column;
+
+  @include mq("md") {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.medical-page__info-wrap {
+  flex-shrink: 0;
+
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.medical-page__info {
+  @include mq("md") {
+    width: 40%;
+  }
+}
+
+.medical-page__info-wrapImg {
+  border-radius: rem(20);
+  overflow: hidden;
+  margin-top: rem(16);
+  @include mq("md") {
+    width: rem(454);
+    margin-top: 0;
+  }
+
+  img{
+    aspect-ratio: 454 / 318;
+    object-fit: cover;
+  }
+}
+
+.medical-page__heading {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+}
+
+.medical-page__title-main {
+  font-size: rclamp(20, 32, 375, 1440);
+  font-weight: $semibold;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: $black;
+  font-family: $second-font-family;
+  margin-top: rem(16);
+
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
+.medical-page__description-text {
+  font-size: rem(14);
+  font-weight: $light;
+  margin-top: rem(30);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.medical-page__table {
+  margin-top: rem(59);
+  margin-inline: auto;
+  
+  @include mq('md'){
+      width: 57%;
+    
+  }
+
+  img{
+    aspect-ratio: 339 / 320;
+  }
+}

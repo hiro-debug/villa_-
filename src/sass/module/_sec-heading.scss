@@ -1,0 +1,47 @@
+@use "global" as *;
+.sec-heading {
+  margin-left: rem(16);
+
+  @include mq('md'){
+    margin-left: rem(21);
+  }
+}
+
+.sec-heading__ja {
+  font-size: rclamp(18, 22, 375,1440);
+  font-weight: $semibold;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-family: $second-font-family;
+  position: relative;
+  color: $black;
+}
+
+.sec-heading__ja::after {
+    content:'';
+    position:absolute;
+    left: rem(-10);
+    top: 50%;
+    transform: translateX(-50%);
+    background-color: #95782c;
+    height:  rem(7);
+    width:  rem(7);
+    border-radius: 50%;
+
+    @include mq('md'){
+        height:  rem(8);
+        width:  rem(8);
+        left: rem(-18);
+
+    }
+}
+
+.sec-heading__en {
+  font-size: rclamp(10, 12, 375,1440);
+  font-weight: $medium;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #95782c;
+  display: block;
+  padding-left: rem(10);
+}
