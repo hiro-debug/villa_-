@@ -4328,14 +4328,27 @@ body.active {
 }
 
 .initiative-page {
-  padding: 100px 0;
-  padding: 6.25rem 0;
+  padding: 100px 0 0;
+  padding: 6.25rem 0 0;
 }
 
 .initiative-page .content-wrap {
   width: 100%;
   margin-top: 40px;
   margin-top: 2.5rem;
+}
+
+.initiative-page .content-wrap.content-wrap--narrow {
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  padding-right: 25px;
+  padding-right: 1.5625rem;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page .content-wrap.content-wrap--narrow {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
 }
 
 .initiative-page__container {
@@ -4369,9 +4382,6 @@ body.active {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0.625rem rgba(0, 0, 0, .15);
           box-shadow: 0 0 0.625rem rgba(0, 0, 0, .15);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4384,10 +4394,14 @@ body.active {
           transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .initiative-page .swiper-button-prev,
   .initiative-page .swiper-button-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 5rem;
     height: 5rem;
   }
@@ -4448,16 +4462,22 @@ body.active {
   margin-top: 2.5rem;
   text-align: center;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 30/18;
   color: #333;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__center {
+    font-size: 1.125rem;
+  }
 }
 
 .initiative-page__texts {
   margin-top: 60px;
   margin-top: 3.75rem;
-  padding: 0 20px;
-  padding: 0 1.25rem;
+  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .initiative-page__texts {
@@ -4467,9 +4487,15 @@ body.active {
 
 .initiative-page__text {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 30/18;
   color: #333;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__text {
+    font-size: 1.125rem;
+  }
 }
 
 .initiative-page__text:not(:first-child) {
@@ -4481,12 +4507,14 @@ body.active {
   margin-top: 30px;
   margin-top: 1.875rem;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 30/18;
   color: #333;
 }
 @media screen and (min-width: 768px) {
   .initiative-page__pamphlet {
+    font-size: 1.125rem;
     margin-top: 3.25rem;
   }
 }
@@ -4520,6 +4548,202 @@ body.active {
   border-left: 0.375rem solid #3a5abf;
   margin-left: 4px;
   margin-left: 0.25rem;
+}
+
+.initiative-page__title.initiative-page__title--second {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__title.initiative-page__title--second {
+    margin-top: 6.25rem;
+  }
+}
+
+.initiative-page__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.initiative-page__flex-left {
+  width: 100%;
+  max-width: 383px;
+  max-width: 23.9375rem;
+}
+
+.initiative-page__flex-right {
+  width: 100%;
+  max-width: 450px;
+  max-width: 28.125rem;
+}
+
+.initiative-page__flex-right img {
+  border-radius: 10px;
+}
+
+.initiative-page__item {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.initiative-page__item-wrap {
+  margin-top: 24px;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__item-wrap {
+    padding: 0 2.5rem;
+  }
+}
+
+.service-page__price-header.service-page__price-header--second {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.initiative-page__grid {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.initiative-page__grid-text {
+  padding: 10px 0;
+  padding: 0.625rem 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #333;
+}
+
+.initiative-page__grid img {
+  border-radius: 20px;
+}
+
+.initiative-page__block.initiative-page__block--top {
+  padding-top: 32px;
+  padding-top: 2rem;
+  border-top: 1px solid #95782c;
+  border-top: 0.0625rem solid #95782c;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.initiative-page__heading {
+  position: relative;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* 研修リスト：2カラム */
+.initiative-page__training-grid {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  gap: 2rem;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__training-grid {
+    padding: 0 2.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.initiative-page__training-list {
+  margin: 0;
+}
+
+.initiative-page__training-row {
+  font-weight: 350;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 30/18;
+}
+.initiative-page__training-row + .initiative-page__training-row {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+.initiative-page__training-month {
+  font-weight: 350;
+}
+
+.initiative-page__training-body p + p {
+  margin-top: 4px;
+  margin-top: 0.25rem;
+}
+
+/* 委員会リスト */
+.initiative-page__committee-list {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 30/18;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+  font-weight: 300;
+  color: #333;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__committee-list {
+    padding: 0 2.5rem;
+  }
+}
+
+.initiative-page__committee-item {
+  position: relative;
+  padding-left: 16px;
+  padding-left: 1rem;
+}
+
+.initiative-page__committee-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .medical-page__info-wrap-container {
