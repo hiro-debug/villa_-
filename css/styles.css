@@ -4476,8 +4476,7 @@ body.active {
 .initiative-page__texts {
   margin-top: 60px;
   margin-top: 3.75rem;
-  padding: 0 10px;
-  padding: 0 0.625rem;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .initiative-page__texts {
@@ -4610,8 +4609,7 @@ body.active {
 
 .initiative-page__item-wrap {
   margin-top: 24px;
-  padding: 0 10px;
-  padding: 0 0.625rem;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .initiative-page__item-wrap {
@@ -4681,8 +4679,7 @@ body.active {
   grid-template-columns: repeat(1, 1fr);
   gap: 32px;
   gap: 2rem;
-  padding: 0 10px;
-  padding: 0 0.625rem;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .initiative-page__training-grid {
@@ -4722,8 +4719,7 @@ body.active {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 30/18;
-  padding: 0 10px;
-  padding: 0 0.625rem;
+  padding: 0;
   font-weight: 300;
   color: #333;
 }
@@ -4744,6 +4740,10 @@ body.active {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.initiative-page .service-page__price-title {
+  line-height: 1;
 }
 
 .medical-page__info-wrap-container {
