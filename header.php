@@ -29,23 +29,110 @@
 
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/about')); ?>">施設紹介</a>
+          <li class="header__nav-modal-wrap">
+            <p>施設紹介</p>
+            <ul class="header__nav-modal">
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/about#facility-info')); ?>">
+                  介護老人保健施設とは</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/about#facility-info2')); ?>">施設概要</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/about#access')); ?>">
+                  アクセス</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/about#treatment-improvement')); ?>">
+                  介護職員等特定処遇改善加算にかかる<br>情報公開</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/about#medical-fee-calculation')); ?>">
+                  所定疾患施設療養費算定状況</a>
+              </li>
+            </ul>
           </li>
-          <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/medical-institution')); ?>">内科</a>
+          <li class="header__nav-modal-wrap">
+            <p>隣接する内科紹介</p>
+            <ul class="header__nav-modal">
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/medical-institution')); ?>">
+                  併設医療機関として<br>加藤胃腸科内科<br>とびしまこどもクリニックの紹介</a>
+              </li>
+            </ul>
           </li>
-          <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/service')); ?>">サービス・料金</a>
+          <li class="header__nav-modal-wrap">
+            <p>サービス・料金</p>
+            <ul class="header__nav-modal">
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/service#residential-care')); ?>">
+                  入所サービス</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/service#short-stay')); ?>">ショートステイ</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/service#day-rehab')); ?>">
+                  デイケア</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/service#home-rehab')); ?>">
+                  訪問サービス</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/service#price-list')); ?>">
+                  料金案内</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/service#usage-examples')); ?>">
+                  ご利用例の紹介</a>
+              </li>
+            </ul>
           </li>
-          <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/ryousaikai')); ?>">良斉会</a>
+          <li class="header__nav-modal-wrap">
+            <p>良斉会</p>
+            <ul class="header__nav-modal">
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/ryousaikai')); ?>">
+                  ヴィラ飛島の基本理念</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/ryousaikai#profile')); ?>">プロフィール</a>
+              </li>
+            </ul>
           </li>
-          <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/attempt')); ?>">ヴィラとびしまの魅力</a>
+          <li class="header__nav-modal-wrap">
+            <p>取り組み</p>
+            <ul class="header__nav-modal">
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/attempt')); ?>">
+                  ヴィラ飛島の基本理念</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/attempt')); ?>">プロフィール</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/attempt')); ?>">
+                  料金案内</a>
+              </li>
+            </ul>
           </li>
-          <li class="header__nav-item">
-            <a href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
+          <li class="header__nav-modal-wrap">
+            <p>採用情報</p>
+            <ul class="header__nav-modal">
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/recruit')); ?>">
+                  先輩たちの声</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/recruit')); ?>">
+                  介護助手の採用</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -84,22 +171,100 @@
         <nav class="header__drawer-nav">
           <ul class="header__drawer-list">
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/about')); ?>">施設紹介</a>
+              <p class="header__drawer-accordion-title js-drawer-accordion">施設紹介</p>
+              <ul class="header__drawer-accordion-list">
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/about#facility-info')); ?>">-介護老人保健施設とは</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/about#facility-info2')); ?>">-施設概要</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/about#access')); ?>">-アクセス</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/about#treatment-improvement')); ?>">-介護職員等特定処遇改善加算にかかる<br>情報公開</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/about#medical-fee-calculation')); ?>">-所定疾患施設療養費算定状況</a>
+                </li>
+              </ul>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/medical-institution')); ?>">内科</a>
+              <p class="header__drawer-accordion-title js-drawer-accordion">隣接する内科紹介</p>
+              <ul class="header__drawer-accordion-list">
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/medical-institution')); ?>">-併設医療機関として<br>加藤胃腸科内科<br>とびしまこどもクリニックの紹介</a>
+                </li>
+              </ul>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/service')); ?>">サービス・料金</a>
+              <p class="header__drawer-accordion-title js-drawer-accordion">サービス・料金</p>
+              <ul class="header__drawer-accordion-list">
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/service#residential-care')); ?>">-入所サービス</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/service#short-stay')); ?>">-ショートステイ</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/service#day-rehab')); ?>">-デイケア</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/service#home-rehab')); ?>">-訪問サービス</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/service#price-list')); ?>">-料金案内</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/service#usage-examples')); ?>">-ご利用例の紹介</a>
+                </li>
+              </ul>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/ryousaikai')); ?>">良斉会</a>
+              <p class="header__drawer-accordion-title js-drawer-accordion">良斉会</p>
+              <ul class="header__drawer-accordion-list">
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/ryousaikai')); ?>">-ヴィラ飛島の基本理念</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/ryousaikai#profile')); ?>">-プロフィール</a>
+                </li>
+              </ul>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/attempt')); ?>">ヴィラとびしまの魅力</a>
+              <p class="header__drawer-accordion-title js-drawer-accordion">取り組み</p>
+              <ul class="header__drawer-accordion-list">
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-ヴィラ飛島の基本理念</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-リハビリテーション</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-ターミナルケア</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-自立介護支援</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-施設内研修委員会</a>
+                </li>
+              </ul>
             </li>
             <li class="header__drawer-item">
-              <a href="<?php echo esc_url(home_url('/#recruit')); ?>">採用情報</a>
+              <p class="header__drawer-accordion-title js-drawer-accordion">採用情報</p>
+              <ul class="header__drawer-accordion-list">
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/recruit')); ?>">-先輩たちの声</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/recruit')); ?>">-採用情報</a>
+                </li>
+                <li class="header__drawer-accordion-item">
+                  <a href="<?php echo esc_url(home_url('/recruit')); ?>">-介護助手の採用</a>
+                </li>
+              </ul>
             </li>
           </ul>
           <div class="header__drawer-contact">
