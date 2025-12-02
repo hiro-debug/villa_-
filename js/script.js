@@ -361,13 +361,13 @@ filterButtons.forEach((button) => {
     });
 
     window.addEventListener('load', () => {
+      // ハッシュが存在しない場合は何もしない
+      if (!location.hash) return;
+
       const header = document.getElementById("js-header");
       const headerHeight = header ? header.clientHeight : 0;
-      console.log("ヘッダー高さ:", headerHeight); // デバッグ用
-      
       const target = document.querySelector(location.hash);
       if (target) {
-        console.log("ターゲット位置:", target.offsetTop); // デバッグ用
         const targetY = target.offsetTop - headerHeight - 70;
         window.scrollTo({
           top: targetY,
