@@ -4327,6 +4327,201 @@ body.active {
   display: block;
 }
 
+.initiative-page {
+  padding: 100px 0;
+  padding: 6.25rem 0;
+}
+
+.initiative-page .content-wrap {
+  width: 100%;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.initiative-page__container {
+  position: relative;
+}
+
+.initiative-page .js-slider {
+  width: 100%;
+  max-width: 900px;
+  max-width: 56.25rem;
+  margin: 40px auto 0;
+  margin: 2.5rem auto 0;
+  overflow: hidden;
+}
+
+.initiative-page .js-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+/* ▼ 矢印エリアの共通スタイル */
+.initiative-page .swiper-button-prev,
+.initiative-page .swiper-button-next {
+  width: 48px;
+  width: 3rem;
+  height: 48px;
+  height: 3rem;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0.625rem rgba(0, 0, 0, .15);
+          box-shadow: 0 0 0.625rem rgba(0, 0, 0, .15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page .swiper-button-prev,
+  .initiative-page .swiper-button-next {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* ▼ 左右の位置調整（スライド外に配置） */
+.initiative-page .swiper-button-prev {
+  left: -50px;
+  left: -3.125rem;
+}
+
+.initiative-page .swiper-button-next {
+  right: -50px;
+  right: -3.125rem;
+}
+
+/* ▼ 中の三角をCSSで作る（青） */
+.initiative-page .swiper-button-prev::before,
+.initiative-page .swiper-button-next::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* ▼ 左（三角形） */
+.initiative-page .swiper-button-prev::before {
+  border-width: 12px 16px 12px 0;
+  border-width: 0.75rem 1rem 0.75rem 0;
+  border-color: transparent #1e90ff transparent transparent;
+}
+
+/* ▼ 右（三角形） */
+.initiative-page .swiper-button-next::before {
+  border-width: 12px 0 12px 16px;
+  border-width: 0.75rem 0 0.75rem 1rem;
+  border-color: transparent transparent transparent #1e90ff;
+}
+
+/* ▼ ホバーで少し濃く */
+.initiative-page .swiper-button-prev:hover,
+.initiative-page .swiper-button-next:hover {
+  -webkit-box-shadow: 0 0 0.875rem rgba(0, 0, 0, .25);
+          box-shadow: 0 0 0.875rem rgba(0, 0, 0, .25);
+}
+
+.initiative-page .swiper-button-prev svg,
+.initiative-page .swiper-button-next svg,
+.initiative-page .swiper-button-prev .swiper-button-prev,
+.initiative-page .swiper-button-next .swiper-button-next,
+.initiative-page .swiper-button-prev::after,
+.initiative-page .swiper-button-next::after {
+  display: none !important;
+}
+
+.initiative-page__center {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30/18;
+  color: #333;
+}
+
+.initiative-page__texts {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  padding: 0 20px;
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__texts {
+    padding: 0 2.5rem;
+  }
+}
+
+.initiative-page__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30/18;
+  color: #333;
+}
+
+.initiative-page__text:not(:first-child) {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+.initiative-page__pamphlet {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30/18;
+  color: #333;
+}
+@media screen and (min-width: 768px) {
+  .initiative-page__pamphlet {
+    margin-top: 3.25rem;
+  }
+}
+
+.initiative-page__pamphlet-link {
+  position: relative;
+  padding-left: 28px;
+  padding-left: 1.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.017em;
+  color: #3a5abf;
+  cursor: pointer;
+}
+
+.initiative-page__pamphlet-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-top: 0.25rem solid transparent;
+  border-bottom: 4px solid transparent;
+  border-bottom: 0.25rem solid transparent;
+  border-left: 6px solid #3a5abf;
+  border-left: 0.375rem solid #3a5abf;
+  margin-left: 4px;
+  margin-left: 0.25rem;
+}
+
 .medical-page__info-wrap-container {
   display: -webkit-box;
   display: -ms-flexbox;

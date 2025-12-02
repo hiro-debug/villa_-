@@ -1,0 +1,158 @@
+@use "global" as *;
+
+.initiative-page {
+  padding: rem(100) 0;
+}
+
+.initiative-page .content-wrap {
+  width: 100%;
+  margin-top: rem(40);
+}
+
+.initiative-page__container {
+  position: relative;
+}
+
+.initiative-page .js-slider {
+  width: 100%;
+  max-width: rem(900);
+  margin: rem(40) auto 0;
+  overflow: hidden;
+}
+
+.initiative-page .js-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: rem(8);
+}
+
+/* ▼ 矢印エリアの共通スタイル */
+.initiative-page .swiper-button-prev,
+.initiative-page .swiper-button-next {
+  width: rem(48);
+  height: rem(48);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+  }
+}
+
+/* ▼ 左右の位置調整（スライド外に配置） */
+.initiative-page .swiper-button-prev {
+  left: rem(-50);
+}
+
+.initiative-page .swiper-button-next {
+  right: rem(-50);
+}
+
+/* ▼ 中の三角をCSSで作る（青） */
+.initiative-page .swiper-button-prev::before,
+.initiative-page .swiper-button-next::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* ▼ 左（三角形） */
+.initiative-page .swiper-button-prev::before {
+  border-width: rem(12) rem(16) rem(12) 0;
+  border-color: transparent #1e90ff transparent transparent;
+}
+
+/* ▼ 右（三角形） */
+.initiative-page .swiper-button-next::before {
+  border-width: rem(12) 0 rem(12) rem(16);
+  border-color: transparent transparent transparent #1e90ff;
+}
+
+/* ▼ ホバーで少し濃く */
+.initiative-page .swiper-button-prev:hover,
+.initiative-page .swiper-button-next:hover {
+  box-shadow: 0 0 rem(14) rgba(0, 0, 0, 0.25);
+}
+
+.initiative-page .swiper-button-prev svg,
+.initiative-page .swiper-button-next svg,
+.initiative-page .swiper-button-prev .swiper-button-prev,
+.initiative-page .swiper-button-next .swiper-button-next,
+.initiative-page .swiper-button-prev::after,
+.initiative-page .swiper-button-next::after {
+  display: none !important;
+}
+
+.initiative-page__center {
+  margin-top: rem(40);
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30 / 18;
+  color: #333;
+}
+
+.initiative-page__texts {
+  margin-top: rem(60);
+  padding: 0 rem(20);
+  @include mq("md") {
+    padding: 0 rem(40);
+  }
+}
+
+.initiative-page__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30 / 18;
+  color: #333;
+}
+
+.initiative-page__text:not(:first-child) {
+  margin-top: rem(20);
+}
+
+.initiative-page__pamphlet {
+  margin-top: rem(30);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30 / 18;
+  color: #333;
+  @include mq("md") {
+    margin-top: rem(52);
+  }
+}
+
+.initiative-page__pamphlet-link {
+  position: relative;
+  padding-left: rem(28);
+  font-size: rem(14);
+  font-weight: 500;
+  letter-spacing: 0.017em;
+  color: #3a5abf;
+  cursor: pointer;
+}
+
+.initiative-page__pamphlet-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: rem(4) solid transparent;
+  border-bottom: rem(4) solid transparent;
+  border-left: rem(6) solid #3a5abf;
+  margin-left: rem(4);
+}
