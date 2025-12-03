@@ -6651,8 +6651,6 @@ body.single {
 }
 
 .service-page__adl-section {
-  padding-bottom: 60px;
-  padding-bottom: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6687,6 +6685,10 @@ body.single {
   .service-page__adl-content {
     padding-block: 2.1875rem;
   }
+}
+
+.service-page__adl-content:last-child {
+  border-bottom: none;
 }
 
 .service-page__adl-content:hover .service-page__adl-header {
@@ -6815,7 +6817,7 @@ body.single {
 }
 @media screen and (min-width: 768px) {
   .service-page__adl-wrap {
-    padding: 5.25rem 6.125rem 3.75rem 3.125rem;
+    padding: 5.25rem 6.125rem 1.5rem 3.125rem;
   }
 }
 
@@ -6991,13 +6993,10 @@ body.single {
 .service-page__price-section {
   margin-top: 60px;
   margin-top: 3.75rem;
-  padding-bottom: 60px;
-  padding-bottom: 3.75rem;
 }
 @media screen and (min-width: 768px) {
   .service-page__price-section {
     margin-top: 6.25rem;
-    padding-bottom: 6.25rem;
   }
 }
 
@@ -7010,7 +7009,7 @@ body.single {
 }
 @media screen and (min-width: 768px) {
   .service-page__price-container {
-    padding: 3.75rem 3.125rem;
+    padding: 3.75rem 3.125rem 2rem;
     margin-top: 3.8125rem;
   }
 }
@@ -7033,6 +7032,10 @@ body.single {
     padding-bottom: 1.875rem;
     gap: 1.875rem;
   }
+}
+
+.service-page__price-table:last-child {
+  border-bottom: none;
 }
 
 .service-page__price-table + .service-page__price-table {

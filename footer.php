@@ -69,10 +69,6 @@
               <span class="footer__menu-link-icon">▶︎</span>
               <a href="<?php echo home_url('/service#day-rehab'); ?>" class="footer__menu-link">デイケア</a>
             </li>
-            <!-- <li class="footer__menu-item">
-              <span class="footer__menu-link-icon">▶︎</span>
-              <a href="#" class="footer__menu-link">訪問サービス</a>
-            </li> -->
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
               <a href="<?php echo home_url('/service#home-rehab'); ?>" class="footer__menu-link">訪問サービス</a>

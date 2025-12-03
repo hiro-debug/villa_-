@@ -710,7 +710,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">元気に歩行していたが、転倒して骨折したことにより歩行が不安定なまま退院となってしまった。このままではまた転倒してしまう可能性が高い状態である。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/629.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -726,7 +726,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">今までは介護も必要なかったのだが、脳血管障害（脳梗塞・脳出血など）により介護が必要となってしまった。退院後に自宅での介護が困難である。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/699.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -742,7 +742,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">自宅で介護しているが、徐々に体力と筋力が低下している。介護負担も大きくなっているため、自宅での介護が困難となってきている。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/285.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -767,7 +767,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">昼夜逆転しており、夜中にゴソゴソと行動する。食事を作ろうとして夜間に台所で火を使うため目が離せない。家族は夜間眠れないため寝不足となり、介護疲れが増大。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/721.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -783,7 +783,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">認知症の周辺症状悪化により、暴言・暴力や介護抵抗が増えてきた。主介護者である妻の介護ストレスが増大。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/595.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -799,7 +799,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">目が見えず、認知症の周辺症状により動作にはほぼ介助が必要。しかも最近は足の筋力が低下しているのか、フラフラになっている。排便があると紙パンツの中に手を入れてしまうなどの不潔行為もあり、家族の身体的介護負担と介護ストレスが増大している。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/711.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -824,7 +824,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">肺炎と診断され、毎日点滴するために受診するよう主治医から言われた。しかし、家族は仕事があるため毎日の受診は困難である。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/896.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -840,7 +840,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">超高齢ということもあり、自宅での食事摂取が困難となっている。体力も徐々に低下。介護負担も増えてきた。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/098.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -865,7 +865,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">緩和ケア病棟に入院していたが症状も落ち着いていることと、3か月経過したため退院の話が出た</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/538.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -881,7 +881,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">重度の心不全があり、発作を起こして入院。奇跡的に一命をとりとめた。しかし、主治医からは「次に発作が起きたら助からない」と言われた。家族は遠方に住んでおり、本人が移動するのは危険だと言われた。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/840.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -897,7 +897,7 @@
                                     <div class="service-page__adl-item-content">
                                         <p class="service-page__adl-item-description">入所中に重篤な脳梗塞を発症。病院に受診するも手の施しようがないとの診断。</p>
                                     </div>
-                                    <a href="#" class="service-page__adl-item-link">
+                                    <a href="https://media.toriaez.jp/r1236/469.pdf" class="service-page__adl-item-link" target="_blank" rel="noopener noreferrer">
                                         <span class="service-page__adl-item-arrow">▶︎</span>
                                         <span class="service-page__adl-item-link-text">ご利用例</span>
                                     </a>
@@ -910,5 +910,7 @@
 
         </div>
     </section>
+    <?php get_template_part('template-parts/com-banner'); ?>
+
 </main>
 <?php get_footer(); ?>

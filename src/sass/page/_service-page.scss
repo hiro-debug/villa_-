@@ -353,7 +353,6 @@
 }
 
 .service-page__adl-section {
-  padding-bottom: rem(60);
   display: flex;
   flex-direction: column;
   gap: rem(30);
@@ -378,6 +377,10 @@
   @include mq("md") {
     padding-block: rem(35);
   }
+}
+
+.service-page__adl-content:last-child {
+  border-bottom: none;
 }
 
 .service-page__adl-content:hover .service-page__adl-header {
@@ -465,7 +468,7 @@
   padding: rem(24) rem(32) rem(24) rem(32);
   margin-top: rem(22);
   @include mq("md") {
-    padding: rem(84) rem(98) rem(60) rem(50);
+    padding: rem(84) rem(98) rem(24) rem(50);
   }
 }
 
@@ -593,11 +596,9 @@
 
 .service-page__price-section {
   margin-top: rem(60);
-  padding-bottom: rem(60);
 
   @include mq("md") {
     margin-top: rem(100);
-    padding-bottom: rem(100);
   }
 }
 
@@ -607,7 +608,7 @@
   padding: rem(32) rem(24);
 
   @include mq("md") {
-    padding: rem(60) rem(50);
+    padding: rem(60) rem(50) rem(32);
     margin-top: rem(61);
   }
 }
@@ -623,6 +624,10 @@
     padding-bottom: rem(30);
     gap: rem(30);
   }
+}
+
+.service-page__price-table:last-child {
+  border-bottom: none;
 }
 
 .service-page__price-table + .service-page__price-table {
