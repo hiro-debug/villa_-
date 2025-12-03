@@ -126,11 +126,11 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="footer__menu-link">採用情報</a>
+              <a href="<?php echo esc_url(home_url('/recruit')); ?>#recruit" class="footer__menu-link">採用情報</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="footer__menu-link">介護助手の採用</a>
+              <a href="<?php echo esc_url(home_url('/recruit')); ?>#recruit-jyosyu" class="footer__menu-link">介護助手の採用</a>
             </li>
           </ul>
         </div>

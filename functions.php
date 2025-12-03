@@ -35,7 +35,7 @@ function my_script_init()
   wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', true);
   wp_enqueue_script('scroll-trigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array(), '3.1', true);
   wp_enqueue_script('main-js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.2', true);
-  wp_enqueue_style('style-css', get_template_directory_uri() . '/css/styles.css', array(), '1.1.3');
+  wp_enqueue_style('style-css', get_template_directory_uri() . '/css/styles.css', array(), '1.2.0');
   wp_enqueue_script('vivus', 'https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js', array(), '0.3.2', true);
   wp_enqueue_script('yubinbango', 'https://yubinbango.github.io/yubinbango/yubinbango.js', array(), null, true);
 }

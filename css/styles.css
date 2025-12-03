@@ -7247,6 +7247,7 @@ body.single {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-family: "Zen Old Mincho", serif;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .fv__text-wrap {
