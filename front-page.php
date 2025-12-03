@@ -266,7 +266,7 @@
                         <p class="recruitment__text">私たちと一緒に働いてくれる方を募集しています。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                     <div class="recruitment__more">
-                        <a href="<?php echo esc_url(home_url("/recruitment")) ?>">
+                        <a href="<?php echo esc_url(home_url("/recruit")) ?>">
                             <span class="recruitment__more-icon">▶︎</span>
                             <p class="recruitment__more-text">もっとみる</p>
                         </a>
@@ -304,7 +304,7 @@
                 </div>
                 <ul class="recruit__list js-fadeIn">
                     <li class="recruit__list-item">
-                        <a href="<?php echo esc_url(home_url("/attempt")) ?>" class="recruit__list-link">
+                        <a href="<?php echo esc_url(home_url("/initiative")) ?>" class="recruit__list-link">
                             <div class="recruit__list-img">
                                 <img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_recruit06.png')); ?>" alt="ヴィラとびしまのリハビリの様子です" loading="lazy" width="516" height="248">
                             </div>
@@ -332,7 +332,7 @@
                             </div>
                             <div class="recruit__list-content">
                                 <span class="recruit__list-icon">▶︎</span>
-                                <h3 class="recruit__list-title">内科の紹介</h3>
+                                <h3 class="recruit__list-title">隣接する内科の紹介</h3>
                             </div>
                         </a>
                     </li>
