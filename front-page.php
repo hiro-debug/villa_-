@@ -339,7 +339,7 @@
                     <li class="recruit__list-item">
                         <a href="<?php echo esc_url(home_url("/related")) ?>" class="recruit__list-link">
                             <div class="recruit__list-img">
-                                <img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_recruit09.png')); ?>" alt="利用者が集まるコミュニティスペースです" loading="lazy" width="516" height="248">
+                                <img src="<?php echo esc_url(get_theme_file_uri('/images/common/img_recruit10.png')); ?>" alt="やすらぎの里の外観です" loading="lazy" width="516" height="248">
                             </div>
                             <div class="recruit__list-content">
                                 <span class="recruit__list-icon">▶︎</span>

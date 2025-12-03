@@ -6,7 +6,7 @@
             <h1 class="related-page__mv-titleJa mv__titleJa">関連施設</h1>
         </div>
         <div class="related-page__mv-img mv__img">
-            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/related/mv_related.jpg')); ?>" alt="一生懸命お仕事をしている男性スタッフ" width="1440" height="400">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/related/mv_related01.jpg')); ?>" alt="やすらぎの里の外観です" width="1440" height="400">
 
         </div>
         <div class="related-page__mv-tree mv__tree">
