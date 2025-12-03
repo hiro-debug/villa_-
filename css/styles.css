@@ -2143,6 +2143,7 @@ body.active {
 
 .mv__tree.archive-mv__tree {
   top: -16%;
+  pointer-events: none;
 }
 
 .mv__dot.archive-mv__tree {
