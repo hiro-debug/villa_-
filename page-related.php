@@ -26,7 +26,7 @@
 
     <section class="related-page__content layout-content">
         <div class="related-page__inner inner page-inner">
-            <div class="related-page__content-wrap content-wrap">
+            <div class="related-page__content-wrap content-wrap" id="related-yasuragi">
                 <div class="related-page__info-wrap-container">
                     <div class="related-page__info-wrap">
                         <div class="related-page__heading">

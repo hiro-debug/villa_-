@@ -106,15 +106,23 @@
             <p>取り組み</p>
             <ul class="header__nav-modal">
               <li class="header__nav-modal-item">
-                <a href="<?php echo esc_url(home_url('/attempt')); ?>">
-                  ヴィラ飛島の基本理念</a>
+                <a href="<?php echo esc_url(home_url('/initiative#home-care-support')); ?>">
+                  在宅復帰在宅支援</a>
               </li>
               <li class="header__nav-modal-item">
-                <a href="<?php echo esc_url(home_url('/attempt')); ?>">プロフィール</a>
+                <a href="<?php echo esc_url(home_url('/initiative#rehabilitation')); ?>">リハビリテーション</a>
               </li>
               <li class="header__nav-modal-item">
-                <a href="<?php echo esc_url(home_url('/attempt')); ?>">
-                  料金案内</a>
+                <a href="<?php echo esc_url(home_url('/initiative#terminal-care')); ?>">
+                  ターミナルケア</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/initiative#independent-care')); ?>">
+                  自立介護支援</a>
+              </li>
+              <li class="header__nav-modal-item">
+                <a href="<?php echo esc_url(home_url('/initiative#training-committee')); ?>">
+                  施設内研修委員会</a>
               </li>
             </ul>
           </li>
@@ -122,14 +130,10 @@
             <p>採用情報</p>
             <ul class="header__nav-modal">
               <li class="header__nav-modal-item">
-                <a href="<?php echo esc_url(home_url('/recruit')); ?>">
-                  先輩たちの声</a>
+                <a href="<?php echo esc_url(home_url('/recruit')); ?>#recruit">採用情報</a>
               </li>
               <li class="header__nav-modal-item">
-                <a href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
-              </li>
-              <li class="header__nav-modal-item">
-                <a href="<?php echo esc_url(home_url('/recruit')); ?>">
+                <a href="<?php echo esc_url(home_url('/recruit')); ?>#recruit-jyosyu">
                   介護助手の採用</a>
               </li>
             </ul>
@@ -236,28 +240,25 @@
               <p class="header__drawer-accordion-title js-drawer-accordion">取り組み</p>
               <ul class="header__drawer-accordion-list">
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-ヴィラ飛島の基本理念</a>
+                  <a href="<?php echo esc_url(home_url('/initiative#home-care-support')); ?>">-在宅復帰在宅支援</a>
                 </li>
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-リハビリテーション</a>
+                  <a href="<?php echo esc_url(home_url('/initiative#rehabilitation')); ?>">-リハビリテーション</a>
                 </li>
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-ターミナルケア</a>
+                  <a href="<?php echo esc_url(home_url('/initiative#terminal-care')); ?>">-ターミナルケア</a>
                 </li>
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-自立介護支援</a>
+                  <a href="<?php echo esc_url(home_url('/initiative#independent-care')); ?>">-自立介護支援</a>
                 </li>
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/attempt')); ?>">-施設内研修委員会</a>
+                  <a href="<?php echo esc_url(home_url('/initiative#training-committee')); ?>">-施設内研修委員会</a>
                 </li>
               </ul>
             </li>
             <li class="header__drawer-item">
               <p class="header__drawer-accordion-title js-drawer-accordion">採用情報</p>
               <ul class="header__drawer-accordion-list">
-                <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/recruit')); ?>">-先輩たちの声</a>
-                </li>
                 <li class="header__drawer-accordion-item">
                   <a href="<?php echo esc_url(home_url('/recruit')); ?>">-採用情報</a>
                 </li>

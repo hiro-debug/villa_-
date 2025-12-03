@@ -67,15 +67,15 @@
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo home_url('/service#day-rehab'); ?>" class="footer__menu-link">デイケア</a>
+              <a href="<?php echo home_url('/service#day-rehab'); ?>" class="footer__menu-link">通所リハビリ</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo home_url('/service#home-rehab'); ?>" class="footer__menu-link">訪問サービス</a>
+              <a href="<?php echo home_url('/service#home-rehab'); ?>" class="footer__menu-link">訪問リハビリ</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo home_url('/service#price-list'); ?>" class="footer__menu-link">料金案内</a>
+              <a href="<?php echo home_url('/service#price-list'); ?>" class="footer__menu-link">料金表</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
@@ -88,23 +88,23 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/attempt')); ?>" class="footer__menu-link">在宅復帰在宅支援</a>
+              <a href="<?php echo esc_url(home_url('/initiative#home-care-support')); ?>" class="footer__menu-link">在宅復帰在宅支援</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/attempt')); ?>" class="footer__menu-link">リハビリテーション</a>
+              <a href="<?php echo esc_url(home_url('/initiative#rehabilitation')); ?>" class="footer__menu-link">リハビリテーション</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/attempt')); ?>" class="footer__menu-link">ターミナルケア</a>
+              <a href="<?php echo esc_url(home_url('/initiative#terminal-care')); ?>" class="footer__menu-link">ターミナルケア</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/attempt')); ?>" class="footer__menu-link">自立介護支援</a>
+              <a href="<?php echo esc_url(home_url('/initiative#independent-care')); ?>" class="footer__menu-link">自立介護支援</a>
             </li>
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/attempt')); ?>" class="footer__menu-link">施設内研修委員会</a>
+              <a href="<?php echo esc_url(home_url('/initiative#training-committee')); ?>" class="footer__menu-link">施設内研修委員会</a>
             </li>
           </ul>
         </div>
@@ -126,10 +126,6 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="footer__menu-link">先輩たちの声</a>
-            </li>
-            <li class="footer__menu-item">
-              <span class="footer__menu-link-icon">▶︎</span>
               <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="footer__menu-link">採用情報</a>
             </li>
             <li class="footer__menu-item">
@@ -139,7 +135,7 @@
           </ul>
         </div>
         <div class="footer__menu-column red">
-          <h3 class="footer__menu-title">内科の紹介</h3>
+          <h3 class="footer__menu-title no-wrap">隣接する内科の紹介</h3>
           <ul class="footer__menu-list">
             <li class="footer__menu-item start-icon">
               <span class="footer__menu-link-icon">▶︎</span>
@@ -152,7 +148,7 @@
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>
-              <a href="<?php echo esc_url(home_url('/related')); ?>" class="footer__menu-link">やすらぎの里など紹介</a>
+              <a href="<?php echo esc_url(home_url('/related')); ?>#related-yasuragi" class="footer__menu-link">やすらぎの里など紹介</a>
             </li>
           </ul>
         </div>

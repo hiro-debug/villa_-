@@ -29,7 +29,7 @@
     <section class="initiative-page">
         <div class="initiative-page__inner inner page-inner">
 
-            <h3 class="initiative-page__title second-title-underline">介護老人保健施設とは</h3>
+            <h3 class="initiative-page__title second-title-underline" id="home-care-support">介護老人保健施設とは</h3>
             <div class="content-wrap">
                 <div class="initiative-page__container">
                     <div class="swiper js-slider">
@@ -92,7 +92,7 @@
 
             </div>
 
-            <h3 class="initiative-page__title initiative-page__title--second second-title-underline">リハビリテーション</h3>
+            <h3 class="initiative-page__title initiative-page__title--second second-title-underline" id="rehabilitation">リハビリテーション</h3>
             <div class="content-wrap">
                 <div class="initiative-page__flex">
                     <div class="initiative-page__flex-left">
@@ -137,7 +137,7 @@
 
             </div>
 
-            <h3 class="initiative-page__title initiative-page__title--second second-title-underline">ターミナルケア</h3>
+            <h3 class="initiative-page__title initiative-page__title--second second-title-underline" id="terminal-care">ターミナルケア</h3>
             <div class="content-wrap">
                 <p class="initiative-page__text">
                     ヴィラとびしまでは在宅復帰・在宅支援だけでなく、ターミナルケア（お看取り）にも力を入れています。繰り返しご利用していただいていても、いずれは終末期が来ます。最後の場所としてヴィラとびしまをご利用いただくことも可能です。開設以来、ヴィラとびしまでは老衰や末期がん等で延命治療を望まないという方を多くお看取りさせていただいております。
@@ -180,7 +180,7 @@
 
             </div>
 
-            <h3 class="initiative-page__title initiative-page__title--second second-title-underline">自立支援介護</h3>
+            <h3 class="initiative-page__title initiative-page__title--second second-title-underline" id="independent-care">自立支援介護</h3>
             <div class="content-wrap">
 
                 <div class="initiative-page__flex">
@@ -217,7 +217,7 @@
                     すべての職種（施設医、介護士、看護師、ケアマネージャー、リハビリ専門職、支援相談員など）が連携して、自立支援介護を目指しています。</p>
             </div>
 
-            <h3 class="initiative-page__title initiative-page__title--second second-title-underline">自立支援介護</h3>
+            <h3 class="initiative-page__title initiative-page__title--second second-title-underline" id="training-committee">施設内研修・委員会活動</h3>
             <div class="content-wrap content-wrap--narrow">
                 <div class="initiative-page__item-wrap">
 

@@ -37,14 +37,6 @@ jQuery(function ($) {
     }
   });
 
-  // ボタンをクリックしたらスクロールして上に戻る
-  // topBtn.click(function () {
-  //   $('body,html').animate({
-  //     scrollTop: 0
-  //   }, 300, 'swing');
-  //   return false;
-  // });
-
   // ハンバーガーメニュー
   $(function () {
     $(".js-hamburger").click(function () {
@@ -128,95 +120,6 @@ jQuery(function ($) {
   });
 });
 
-// ページ内スクロール
-// $(function () {
-//   // ヘッダーの高さ取得
-//   const headerHeight = $(".header").height();
-//   const offset = 500; // 追加のオフセット（ヘッダーの下に余白を確保）
-
-//   console.log('スクロール処理初期化 - ヘッダー高さ:', headerHeight, 'オフセット:', offset);
-
-//   // 絶対パスと相対パスの両方に対応（href*="#" は#を含むすべてのリンクにマッチ）
-//   $(document).on('click', 'a[href*="#"]', function (e) {
-//     // 最初にデフォルト動作を停止
-//     e.preventDefault();
-//     e.stopPropagation();
-
-//     console.log('===== リンククリック検出 =====');
-
-//     const href = $(this).attr("href");
-//     console.log('1. href:', href);
-
-//     // ハッシュ部分を取得
-//     let hash = href.indexOf('#') !== -1 ? href.substring(href.indexOf('#')) : '';
-//     console.log('2. ハッシュ:', hash);
-
-//     // ハッシュがない、または別ページへのリンクの場合はページ遷移を許可
-//     if (!hash || hash === '#' || hash === '#!') {
-//       console.log('❌ スキップ: ハッシュがないか無効 - ページ遷移を許可');
-//       window.location.href = href;
-//       return false;
-//     }
-
-//     // 同じページ内のリンクかチェック
-//     const currentPath = location.pathname;
-//     const linkPath = this.pathname || '';
-//     console.log('3. パス比較:', {現在: currentPath, リンク: linkPath});
-
-//     // 別ページへのリンクの場合はページ遷移を許可
-//     if (linkPath && linkPath !== currentPath) {
-//       console.log('❌ スキップ: 別ページへのリンク - ページ遷移を許可');
-//       window.location.href = href;
-//       return false;
-//     }
-
-//     const speed = 600;
-//     let target = $(hash);
-//     console.log('4. ターゲット要素:', target.length > 0 ? 'あり' : 'なし');
-
-//     if (!target.length) {
-//       console.log('❌ ターゲットが見つかりません:', hash, '- ページ遷移を許可');
-//       window.location.href = href;
-//       return false;
-//     }
-
-//     console.log('✅ 同ページ内スクロール実行');
-
-//     // ヘッダーの高さ分 + オフセット分下げる
-//     let position = target.offset().top - headerHeight - offset;
-
-//     console.log('5. スクロール計算:', {
-//       'ターゲット位置': target.offset().top,
-//       'ヘッダー高さ': headerHeight,
-//       'オフセット': offset,
-//       '最終位置': position
-//     });
-
-//     console.log('6. スクロール実行中...');
-//     $("body,html").stop().animate({ scrollTop: position }, speed, "swing", function() {
-//       console.log('✅ スクロール完了');
-//     });
-
-//     return false;
-//   });
-
-// });
-
-// メールアドレスが一致しないと送れないように
-// メールアドレスフィールドのバリデーションを追加
-const links = document.querySelectorAll(".header__nav-item > a");
-
-links.forEach(function (link) {
-  // トレーリングスラッシュを除去して比較
-  const linkUrl = link.href.replace(/\/$/, "");
-  const currentUrl = location.href.replace(/\/$/, "");
-
-  if (linkUrl === currentUrl) {
-    link.closest(".header__nav-item").classList.add("current");
-  }
-});
-
-// ※これを使う場合sassに.currrent{}を追加
 
 // 下からフワッと出てくるアニメーション
 $(window)
@@ -229,25 +132,6 @@ $(window)
   })
   .trigger("scroll");
 
-// document.querySelectorAll(".js-stagger-list").forEach((list) => {
-//   const targets = list.querySelectorAll(".js-target");
-//   gsap.fromTo(
-//     targets,
-//     { y: 100, autoAlpha: 0 },
-//     {
-//       y: 0,
-//       autoAlpha: 1,
-//       stagger: 0.2,
-//       duration: 0.8,
-//       ease: "power3.out",
-//       scrollTrigger: {
-//         trigger: list, // ← セクション単位でトリガー発火
-//         start: "top 70%",
-//         toggleActions: "play none none none",
-//       },
-//     }
-//   );
-// });
 
 // ニュースフィルター機能
 const filterButtons = document.querySelectorAll(".news-page__filter-btn");
@@ -355,7 +239,7 @@ window.addEventListener("load", () => {
   const headerHeight = header ? header.clientHeight : 0;
   const target = document.querySelector(location.hash);
   if (target) {
-    const targetY = target.offsetTop - headerHeight - 70;
+    const targetY = target.offsetTop - headerHeight - 170;
     window.scrollTo({
       top: targetY,
       behavior: "smooth",

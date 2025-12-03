@@ -25,7 +25,7 @@
         <?php } ?>
     </div>
 
-    <section class="recruit-page__content layout-content">
+    <section class="recruit-page__content layout-content" id="recruit">
         <div class="recruit-page__inner inner page-inner">
             <p class="recruit-page__content-guide">下記の職種を現在募集しております。</p>
             <div class="recruit-page__content-wrap content-wrap">
@@ -91,7 +91,7 @@
                             経験や所持資格に応じて条件が変動するためお問合せください。</p>
 
                     </div>
-                    <div class="recruit-table__item">
+                    <div class="recruit-table__item" id="recruit-jyosyu">
                         <h2 class="recruit-table__term second-title-dot">介護助手の採用</h2>
                         <p class="recruit-table__item-text">
                             ヴィラとびしまでは、積極的に介護助手を採用しています。<br>
