@@ -84,7 +84,7 @@
           </ul>
         </div>
         <div class="footer__menu-column red">
-          <h3 class="footer__menu-title">取り組み</h3>
+          <h3 class="footer__menu-title">ヴィラとびしまの魅力</h3>
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
               <span class="footer__menu-link-icon">▶︎</span>

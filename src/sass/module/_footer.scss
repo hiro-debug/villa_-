@@ -132,27 +132,32 @@
   @include mq("md") {
     flex-direction: row;
     width: 68%;
-    gap: 8%;
+    gap: 6%;
     row-gap: rem(57);
     flex-wrap: wrap;
     margin-top: 0;
   }
+  @include mq('lg'){
+    gap: 4%;
+    row-gap: rem(57);
+
+  }
   @include mq("xl") {
     width: 72%;
-    gap: 10%;
+    gap: 6%;
     row-gap: rem(57);
   }
 }
 
 .footer__menu-column {
   @include mq("md") {
-    width: 17%;
+    width: 20%;
   }
   @include mq("lg") {
-    width: 19%;
+    width: 22%;
   }
   @include mq("xl") {
-    width: 17%;
+    width: 20%;
   }
 }
 
@@ -182,8 +187,9 @@
   @include mq("md") {
     font-size: rem(14);
   }
-  @include mq("lg") {
+  @include mq('xl'){
     font-size: rem(18);
+
   }
 }
 

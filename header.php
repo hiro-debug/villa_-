@@ -237,7 +237,7 @@
               </ul>
             </li>
             <li class="header__drawer-item">
-              <p class="header__drawer-accordion-title js-drawer-accordion">取り組み</p>
+              <p class="header__drawer-accordion-title js-drawer-accordion">ヴィラとびしまの魅力</p>
               <ul class="header__drawer-accordion-list">
                 <li class="header__drawer-accordion-item">
                   <a href="<?php echo esc_url(home_url('/initiative#home-care-support')); ?>">-在宅復帰在宅支援</a>

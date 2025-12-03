@@ -3,7 +3,7 @@
     <section class="related-page__mv mv">
         <div class="related-page__mv-titleWrap mv__titleWrap">
             <p class="related-page__mv-titleEn mv__titleEn">About initiatives</p>
-            <h1 class="related-page__mv-titleJa mv__titleJa">取り組みについて</h1>
+            <h1 class="related-page__mv-titleJa mv__titleJa">ヴィラとびしまの魅力</h1>
         </div>
         <div class="related-page__mv-img mv__img">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/common/initiative/initiative-mv.jpg')); ?>"
