@@ -1,0 +1,328 @@
+@use "global" as *;
+
+.initiative-page {
+  padding: rem(100) 0 0;
+}
+
+.initiative-page .content-wrap {
+  width: 100%;
+  margin-top: rem(40);
+}
+
+.initiative-page .content-wrap.content-wrap--narrow {
+  padding-left: rem(25);
+  padding-right: rem(25);
+  @include mq("md") {
+    padding-left: rem(50);
+    padding-right: rem(50);
+  }
+}
+
+.initiative-page__container {
+  position: relative;
+}
+
+.initiative-page .js-slider {
+  width: 100%;
+  max-width: rem(900);
+  margin: rem(40) auto 0;
+  overflow: hidden;
+}
+
+.initiative-page .js-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: rem(8);
+}
+
+/* ▼ 矢印エリアの共通スタイル */
+.initiative-page .swiper-button-prev,
+.initiative-page .swiper-button-next {
+  width: rem(48);
+  height: rem(48);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.15);
+  //   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+  @include mq("md") {
+    display: flex;
+    width: rem(80);
+    height: rem(80);
+  }
+}
+
+/* ▼ 左右の位置調整（スライド外に配置） */
+.initiative-page .swiper-button-prev {
+  left: rem(-50);
+}
+
+.initiative-page .swiper-button-next {
+  right: rem(-50);
+}
+
+/* ▼ 中の三角をCSSで作る（青） */
+.initiative-page .swiper-button-prev::before,
+.initiative-page .swiper-button-next::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* ▼ 左（三角形） */
+.initiative-page .swiper-button-prev::before {
+  border-width: rem(12) rem(16) rem(12) 0;
+  border-color: transparent #1e90ff transparent transparent;
+}
+
+/* ▼ 右（三角形） */
+.initiative-page .swiper-button-next::before {
+  border-width: rem(12) 0 rem(12) rem(16);
+  border-color: transparent transparent transparent #1e90ff;
+}
+
+/* ▼ ホバーで少し濃く */
+.initiative-page .swiper-button-prev:hover,
+.initiative-page .swiper-button-next:hover {
+  box-shadow: 0 0 rem(14) rgba(0, 0, 0, 0.25);
+}
+
+.initiative-page .swiper-button-prev svg,
+.initiative-page .swiper-button-next svg,
+.initiative-page .swiper-button-prev .swiper-button-prev,
+.initiative-page .swiper-button-next .swiper-button-next,
+.initiative-page .swiper-button-prev::after,
+.initiative-page .swiper-button-next::after {
+  display: none !important;
+}
+
+.initiative-page__center {
+  margin-top: rem(40);
+  text-align: center;
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 30 / 18;
+  color: #333;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.initiative-page__texts {
+  margin-top: rem(60);
+  padding: 0;
+  @include mq("md") {
+    padding: 0 rem(40);
+  }
+}
+
+.initiative-page__text {
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 30 / 18;
+  color: #333;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.initiative-page__text:not(:first-child) {
+  margin-top: rem(20);
+}
+
+.initiative-page__pamphlet {
+  margin-top: rem(30);
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 30 / 18;
+  color: #333;
+  @include mq("md") {
+    font-size: rem(18);
+    margin-top: rem(52);
+  }
+}
+
+.initiative-page__pamphlet-link {
+  position: relative;
+  padding-left: rem(28);
+  font-size: rem(14);
+  font-weight: 500;
+  letter-spacing: 0.017em;
+  color: #3a5abf;
+  cursor: pointer;
+}
+
+.initiative-page__pamphlet-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: rem(4) solid transparent;
+  border-bottom: rem(4) solid transparent;
+  border-left: rem(6) solid #3a5abf;
+  margin-left: rem(4);
+}
+
+.initiative-page__title.initiative-page__title--second {
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}
+
+.initiative-page__flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: rem(60);
+  flex-direction: column;
+  @include mq("md") {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.initiative-page__flex-left {
+  width: 100%;
+  max-width: rem(383);
+}
+
+.initiative-page__flex-right {
+  width: 100%;
+  max-width: rem(450);
+}
+
+.initiative-page__flex-right img {
+  border-radius: 10px;
+}
+
+.initiative-page__item {
+  margin-top: rem(40);
+}
+
+.initiative-page__item-wrap {
+  margin-top: 24px;
+  padding: 0;
+  @include mq("md") {
+    padding: 0 rem(40);
+  }
+}
+
+.service-page__price-header.service-page__price-header--second {
+  margin-top: rem(40);
+}
+
+.initiative-page__grid {
+  margin-top: rem(24);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(20);
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(24);
+  }
+}
+
+.initiative-page__grid-text {
+  padding: rem(10) 0;
+  font-size: rem(18);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #333;
+}
+
+.initiative-page__grid img {
+  border-radius: 20px;
+}
+
+.initiative-page__block {
+}
+
+.initiative-page__block.initiative-page__block--top {
+  padding-top: rem(32);
+  border-top: rem(1) solid #95782c; // 画像の薄いゴールド線イメージ
+  margin-top: rem(40);
+}
+
+.initiative-page__heading {
+  position: relative;
+  margin-bottom: rem(24);
+  padding-left: rem(16);
+  font-size: rem(16);
+  font-weight: 600;
+}
+
+/* 研修リスト：2カラム */
+.initiative-page__training-grid {
+  margin-top: rem(30);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(32);
+  padding: 0;
+  @include mq("md") {
+    padding: 0 rem(40);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.initiative-page__training-list {
+  margin: 0;
+}
+
+.initiative-page__training-row {
+  font-weight: 350;
+  font-size: rem(18);
+  line-height: 30/18;
+  & + & {
+    margin-top: rem(20);
+  }
+}
+
+.initiative-page__training-month {
+  font-weight: 350;
+}
+
+.initiative-page__training-body p + p {
+  margin-top: rem(4);
+}
+
+/* 委員会リスト */
+.initiative-page__committee-list {
+  margin-top: rem(40);
+  font-size: rem(18);
+  line-height: 30/18;
+  padding: 0;
+  font-weight: 300;
+  color: #333;
+  @include mq("md") {
+    padding: 0 rem(40);
+  }
+}
+
+.initiative-page__committee-item {
+  position: relative;
+  padding-left: rem(16);
+}
+
+.initiative-page__committee-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.initiative-page .service-page__price-title {
+  line-height: 1;
+}
