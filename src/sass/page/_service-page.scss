@@ -279,6 +279,7 @@
   }
 }
 
+
 .service-page__button-link {
   display: inline-flex;
   align-items: center;
@@ -297,6 +298,11 @@
   appearance: none;
   position: relative;
   width: rem(180);
+  transition: opacity 0.3s ease;
+}
+
+.service-page__button-link:hover {
+  opacity: 0.6;
 }
 
 .service-page__button-link.service-page__button-link--short-stay {

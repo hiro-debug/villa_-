@@ -103,7 +103,7 @@
             </ul>
           </li>
           <li class="header__nav-modal-wrap">
-            <p>取り組み</p>
+            <p>ヴィラとびしまの魅力</p>
             <ul class="header__nav-modal">
               <li class="header__nav-modal-item">
                 <a href="<?php echo esc_url(home_url('/initiative#home-care-support')); ?>">
@@ -260,10 +260,10 @@
               <p class="header__drawer-accordion-title js-drawer-accordion">採用情報</p>
               <ul class="header__drawer-accordion-list">
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/recruit')); ?>">-採用情報</a>
+                  <a href="<?php echo esc_url(home_url('/recruit#recruit')); ?>">-採用情報</a>
                 </li>
                 <li class="header__drawer-accordion-item">
-                  <a href="<?php echo esc_url(home_url('/recruit')); ?>">-介護助手の採用</a>
+                  <a href="<?php echo esc_url(home_url('/recruit#recruit-jyosyu')); ?>">-介護助手の採用</a>
                 </li>
               </ul>
             </li>

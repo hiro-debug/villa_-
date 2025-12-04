@@ -574,7 +574,7 @@
             </div>
 
             <div class="service-page__price-section" id="price-list">
-            <h2 class="service-page__price-title second-title-underline">料金表</h2>
+                <h2 class="service-page__price-title second-title-underline">料金表</h2>
                 <div class="service-page__price-container">
                     <div class="service-page__price-table">
                         <div class="service-page__price-header">

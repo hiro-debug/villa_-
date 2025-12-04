@@ -87,7 +87,7 @@
                         また入所が必要となったら再入所（リピート利用）していただくという流れが理想的な利用方法です。<br>
                         もちろん、在宅生活が困難になってしまった際には、長期入所することも可能です。</p>
                     <p class="initiative-page__pamphlet">一般向け老健施設パンフレットはこちら</p>
-                    <a class="initiative-page__pamphlet-link">老健ってなに？！</a>
+                    <a href="<?php echo esc_url(get_theme_file_uri('/images/common/pdf/roukenkyo_pamphlet.pdf')); ?>" class="initiative-page__pamphlet-link" target="_blank" rel="noopener noreferrer">老健ってなに？！</a>
                 </div>
 
             </div>

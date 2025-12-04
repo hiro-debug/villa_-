@@ -1128,6 +1128,10 @@ body.active {
   color: #c75a7b;
   font-size: 6px;
   font-size: 0.375rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 14px;
+  width: 0.875rem;
 }
 
 .footer__menu-link {
@@ -6594,6 +6598,12 @@ body.single {
   position: relative;
   width: 180px;
   width: 11.25rem;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.service-page__button-link:hover {
+  opacity: 0.6;
 }
 
 .service-page__button-link.service-page__button-link--short-stay {

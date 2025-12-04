@@ -239,6 +239,8 @@
 .footer__menu-link-icon {
   color: #c75a7b;
   font-size: rem(6);
+  flex-shrink: 0;
+  width: rem(14);
 }
 
 .footer__menu-link {

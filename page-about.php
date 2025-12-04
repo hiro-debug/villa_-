@@ -6,7 +6,7 @@
             <h1 class="about-page__mv-titleJa mv__titleJa">施設について</h1>
         </div>
         <div class="about-page__mv-img mv__img">
-            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/mv_about.jpg')); ?>" alt="介護老人保健施設ヴィラとびしまの施設外観" width="1440" height="400">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/about/mv_about01.jpg')); ?>" alt="介護老人保健施設ヴィラとびしまの施設外観" width="1440" height="400">
 
         </div>
         <div class="about-page__mv-tree mv__tree">
