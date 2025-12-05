@@ -58,7 +58,106 @@
                 </p>
             </div>
 
-            <?php echo do_shortcode('[contact-form-7 id="20d0bd3" title="お問い合わせ(確認)"]'); ?>
+            <form class="p-form" action="#" method="post">
+
+                <ul class="p-form__list">
+
+                    <!-- お名前 -->
+                    <li class="p-form__item">
+                        <div class="p-form__title">
+                            お名前<span>*</span>
+                        </div>
+                        <div class="p-form__input p-formInput p-formInput--tel">
+                            <p class="p-formConfirm" id="your-name-1"></p>
+                            <p class="p-formConfirm" id="your-name-2"></p>
+                        </div>
+                    </li>
+
+                    <!-- ふりがな -->
+                    <li class="p-form__item">
+                        <div class="p-form__title">
+                            ふりがな<span>*</span>
+                        </div>
+                        <div class="p-form__input p-formInput p-formInput--tel">
+                            <p class="p-formConfirm" id="your-name-kana1"></p>
+                            <p class="p-formConfirm" id="your-name-kana2"></p>
+                        </div>
+                    </li>
+
+                    <!-- 性別 -->
+                    <li class="p-form__item">
+                        <div class="p-form__title">性別</div>
+                        <div class="p-form__input p-form__input--radio p-formRadio">
+                            <p class="p-formConfirm" id="your-radio-1"></p>
+                        </div>
+                    </li>
+
+                    <!-- 年齢 -->
+                    <li class="p-form__item age">
+                        <div class="p-form__title">ご年齢</div>
+                        <div class="p-form__input p-formInput">
+                            <p class="p-formConfirm" id="your-age"></p> 歳
+                        </div>
+                    </li>
+
+                    <!-- 郵便番号 -->
+                    <li class="p-form__item post">
+                        <div class="p-form__title">郵便番号<span>*</span></div>
+                        <div class="p-form__input p-formInput p-formInput--tel">
+                            <p class="p-formConfirm" id="your-post-1"></p> −
+                            <p class="p-formConfirm" id="your-post-2"></p>
+                        </div>
+                    </li>
+
+                    <!-- 住所 -->
+                    <li class="p-form__item">
+                        <div class="p-form__title">住所<span>*</span></div>
+                        <div class="p-form__input p-formInput">
+                            <p class="p-formConfirm" id="your-address"></p>
+                        </div>
+                    </li>
+
+                    <!-- 電話番号 -->
+                    <li class="p-form__item">
+                        <div class="p-form__title">電話番号<span>*</span></div>
+                        <div class="p-form__input p-formInput">
+                            <p class="p-formConfirm" id="your-tel-1"></p>
+                        </div>
+                    </li>
+
+                    <!-- メール -->
+                    <li class="p-form__item">
+                        <div class="p-form__title">メールアドレス<span>*</span></div>
+                        <div class="p-form__input p-formInput">
+                            <p class="p-formConfirm" id="your-email"></p>
+                        </div>
+                    </li>
+
+                    <!-- お問い合わせ内容 -->
+                    <li class="p-form__item">
+                        <div class="p-form__title p-form__title--aiStart">
+                            お問い合わせ内容
+                        </div>
+                        <div class="p-form__input p-formTextarea">
+                            <p class="p-formConfirm" id="your-message"></p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <p class="p-form__privacy">プライバシーポリシーに同意します</p>
+
+                <div class="p-form__acceptance p-formCheckbox">
+                    <p class="p-formConfirm">同意する</p>
+                </div>
+
+                <!-- ボタン -->
+                <div class="p-form__submit">
+                    <button type="button" onclick="history.back();" class="p-formBtn__back">戻る</button>
+                    <button type="submit" class="p-formBtn__primary">送信する</button>
+                </div>
+
+            </form>
 
 
         </div>

@@ -1,8 +1,8 @@
 @use "global" as *;
-.contact-page__content-inner{
+.contact-page__content-inner {
   padding-bottom: rem(60);
 
-  @include mq('md'){
+  @include mq("md") {
     padding-bottom: rem(100);
   }
 }
@@ -613,6 +613,9 @@
   background-color: #fff;
   transform: translateY(-50%);
   border-radius: rem(4);
+
+  @include mq("md") {
+  }
 }
 
 .p-formCheckbox input + span::after {
@@ -635,6 +638,11 @@
 }
 
 //ラジオボタン
+.p-form__input--radio {
+  display: flex;
+  gap: 15%;
+}
+
 .p-formRadio .wpcf7-radio {
   display: flex;
   flex-wrap: wrap;
@@ -746,7 +754,7 @@
   }
 }
 
-.p-form__privacy span{
+.p-form__privacy span {
   color: #e07b9f;
 }
 
@@ -765,7 +773,7 @@
 
 //送信ボタン
 .p-form__submit {
-  margin-top: 50px;
+  margin-top: rem(50);
   text-align: center;
   width: fit-content;
   margin-inline: auto;
@@ -773,41 +781,53 @@
   display: flex;
   flex-direction: column;
   gap: rem(32);
+  color: $white;
 
   @include mq("md") {
     margin-top: rem(53);
     flex-direction: row;
   }
-}
 
-.p-formBtn input:nth-child(2) {
-  background-color: #2e4e7e;
+  button {
+    background-color: #c75a7b;
+    position: relative;
+    padding-right: rem(35); // 矢印分の余白調整
+    width: rem(270);
+    border-radius: rem(35);
+    padding: rem(16) rem(10);
+    color: $white;
+
+    @include mq("md") {
+      width: rem(350);
+      padding: rem(20) rem(10);
+    }
+  }
 }
 
 .p-form__submit::before {
   content: "";
   position: absolute;
-  right: rem(22);
+  right: rem(20);
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(../images/common/icon_arrow-pink.png);
+  background-image: url("../images/common/icon_arrow-pink.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: rem(20);
   width: rem(20);
   z-index: 10;
-
-  @include mq('md'){
-
-  }
 }
 
 .comfirm-page .p-form__submit::before {
   top: 80%;
 
-  @include mq('md'){
+  @include mq("md") {
     top: 50%;
   }
+}
+
+.p-form__submit .p-formBtn__back {
+  background-color: #2e4e7e;
 }
 
 .p-formBtn input {

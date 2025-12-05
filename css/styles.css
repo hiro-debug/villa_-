@@ -1102,9 +1102,9 @@ body.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 7px;
 }
 
@@ -1130,8 +1130,8 @@ body.active {
   font-size: 0.375rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 14px;
-  width: 0.875rem;
+  width: 12px;
+  width: 0.75rem;
 }
 
 .footer__menu-link {
@@ -1238,7 +1238,7 @@ body.active {
 }
 @media screen and (min-width: 768px) {
   .header__logo a {
-    width: 10rem;
+    width: 8rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1300,7 +1300,7 @@ body.active {
 }
 @media screen and (min-width: 1440px) {
   .header__nav {
-    margin-left: 2.125rem;
+    margin-left: 0.375rem;
   }
 }
 
@@ -1364,7 +1364,7 @@ body.active {
 @media screen and (min-width: 1440px) {
   .header__nav-item > a,
   .header__nav-modal-wrap > p {
-    padding: 0 1.25rem;
+    padding: 0 0.9375rem;
   }
 }
 
@@ -1408,7 +1408,7 @@ body.active {
 }
 @media screen and (min-width: 1440px) {
   .header__contact {
-    gap: 1.875rem;
+    gap: 1rem;
   }
 }
 
@@ -1424,29 +1424,41 @@ body.active {
 }
 
 .header__tel-number {
-  font-size: 19px;
-  font-size: 1.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .header__tel-number {
+    font-size: 1.1875rem;
+  }
 }
 
 .header__tel-number::before {
   content: "";
   position: absolute;
-  left: -28px;
-  left: -1.75rem;
+  left: -18px;
+  left: -1.125rem;
   top: 56%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 20px;
-  width: 1.25rem;
-  height: 20px;
-  height: 1.25rem;
+  width: 16px;
+  width: 1rem;
+  height: 16px;
+  height: 1rem;
   background-image: url(../images/common/icon_tel.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+@media screen and (min-width: 1440px) {
+  .header__tel-number::before {
+    width: 1.25rem;
+    height: 1.25rem;
+    left: -1.5rem;
+  }
 }
 
 .header__actions {
@@ -1504,8 +1516,8 @@ body.active {
 }
 
 .header__action-icon {
-  width: 16px;
-  width: 1rem;
+  width: 14px;
+  width: 0.875rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4026,7 +4038,6 @@ body.active {
           transform: translateY(-50%);
   border-radius: 0.25rem;
 }
-
 .p-formCheckbox input + span::after {
   content: "";
   position: absolute;
@@ -4045,6 +4056,13 @@ body.active {
 
 .p-formCheckbox input:checked + span::after {
   opacity: 1;
+}
+
+.p-form__input--radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15%;
 }
 
 .p-formRadio .wpcf7-radio {
@@ -4184,6 +4202,7 @@ body.active {
 
 .p-form__submit {
   margin-top: 50px;
+  margin-top: 3.125rem;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -4199,6 +4218,7 @@ body.active {
           flex-direction: column;
   gap: 32px;
   gap: 2rem;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .p-form__submit {
@@ -4209,20 +4229,34 @@ body.active {
             flex-direction: row;
   }
 }
-
-.p-formBtn input:nth-child(2) {
-  background-color: #2e4e7e;
+.p-form__submit button {
+  background-color: #c75a7b;
+  position: relative;
+  padding-right: 35px;
+  padding-right: 2.1875rem;
+  width: 270px;
+  width: 16.875rem;
+  border-radius: 2.1875rem;
+  padding: 16px 10px;
+  padding: 1rem 0.625rem;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-form__submit button {
+    width: 21.875rem;
+    padding: 1.25rem 0.625rem;
+  }
 }
 
 .p-form__submit::before {
   content: "";
   position: absolute;
-  right: 22px;
-  right: 1.375rem;
+  right: 20px;
+  right: 1.25rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../images/common/icon_arrow-pink.png);
+  background-image: url("../images/common/icon_arrow-pink.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 20px;
@@ -4231,6 +4265,7 @@ body.active {
   width: 1.25rem;
   z-index: 10;
 }
+
 .comfirm-page .p-form__submit::before {
   top: 80%;
 }
@@ -4238,6 +4273,10 @@ body.active {
   .comfirm-page .p-form__submit::before {
     top: 50%;
   }
+}
+
+.p-form__submit .p-formBtn__back {
+  background-color: #2e4e7e;
 }
 
 .p-formBtn input {

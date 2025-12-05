@@ -220,7 +220,7 @@
   //   align-items: center;
   //   gap: rem(5);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 7px;
 }
 
@@ -240,7 +240,7 @@
   color: #c75a7b;
   font-size: rem(6);
   flex-shrink: 0;
-  width: rem(14);
+  width: rem(12);
 }
 
 .footer__menu-link {

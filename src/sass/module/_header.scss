@@ -47,7 +47,7 @@
   text-decoration: none;
   width: rem(155);
   @include mq("md") {
-    width: rem(160);
+    width: rem(128);
   }
   @include mq("xl") {
     width: rem(187);
@@ -91,7 +91,7 @@
     margin-left: rem(2);
   }
   @include mq("xl") {
-    margin-left: rem(34);
+    margin-left: rem(6);
   }
 }
 
@@ -145,7 +145,7 @@
     padding: 0 rem(10);
   }
   @include mq("xl") {
-    padding: 0 rem(20);
+    padding: 0 rem(15);
   }
 }
 
@@ -190,7 +190,7 @@
     gap: rem(10);
   }
   @include mq("xl") {
-    gap: rem(30);
+    gap: rem(16);
   }
 }
 
@@ -201,24 +201,37 @@
 }
 
 .header__tel-number {
-  font-size: rem(19);
+  font-size: rem(16);
   font-weight: 500;
   line-height: 1.5;
   position: relative;
+
+  @include mq('xl'){
+    font-size: rem(19);
+
+  }
 }
 
 .header__tel-number::before {
   content: "";
   position: absolute;
-  left: rem(-28);
+  left: rem(-18);
   top: 56%;
   transform: translateY(-50%);
-  width: rem(20);
-  height: rem(20);
+  width: rem(16);
+  height: rem(16);
   background-image: url(../images/common/icon_tel.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+
+  @include mq('xl'){
+    width: rem(20);
+    height: rem(20);
+    left: rem(-24);
+
+  }
 }
 
 .header__actions {
@@ -259,8 +272,7 @@
 }
 
 .header__action-icon {
-  width: rem(16);
-  // height: rem(16);
+  width: rem(14);
   display: inline-flex;
 
   @include mq("xl") {
